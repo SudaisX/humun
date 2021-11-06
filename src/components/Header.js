@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 
-const Header = () => {
+const Header = ({ active }) => {
     return (
         <>
             <Navbar expand='lg'>
@@ -20,19 +20,23 @@ const Header = () => {
                     <Navbar.Collapse id='basic-navbar-nav'>
                         <Nav className='ms-auto '>
                             <Nav.Link>
-                                <Link to='/' className='navlink'>
+                                <Link to='/' className={'navlink' + (active[0] ? ' active' : '')}>
                                     Home
                                 </Link>
                             </Nav.Link>
 
                             <Nav.Link>
-                                <Link to='/about' className='navlink'>
+                                <Link
+                                    to='/about'
+                                    className={'navlink' + (active[1] ? ' active' : '')}>
                                     About
                                 </Link>
                             </Nav.Link>
 
                             <Nav.Link>
-                                <Link to='/committees' className='navlink'>
+                                <Link
+                                    to='/committees'
+                                    className={'navlink' + (active[2] ? ' active' : '')}>
                                     Committees
                                 </Link>
                             </Nav.Link>
@@ -56,13 +60,17 @@ const Header = () => {
                             </NavDropdown> */}
 
                             <Nav.Link style={{ marginRight: '100px' }}>
-                                <Link to='/contact' className='navlink'>
+                                <Link
+                                    to='/contact'
+                                    className={'navlink' + (active[3] ? ' active' : '')}>
                                     Contact Us
                                 </Link>
                             </Nav.Link>
 
                             <Nav.Link>
-                                <Link to='/register' className='navlink'>
+                                <Link
+                                    to='/register'
+                                    className={'navlink' + (active[4] ? ' active' : '')}>
                                     Register
                                 </Link>
                             </Nav.Link>

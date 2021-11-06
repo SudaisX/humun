@@ -1,7 +1,11 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 
-const About = () => {
+const About = ({ setActive }) => {
+    useEffect(() => {
+        document.title = 'About';
+        setActive([false, true, false, false, false]);
+    }, []);
     return (
         <Container className='content-container'>
             <h2 className='page-title'>

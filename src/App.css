@@ -162,6 +162,10 @@ img {
     border-bottom: 3px solid var(--color3);
 }
 
+.active {
+    border-bottom: 3px solid var(--color3);
+}
+
 /* Responsive Navbar */
 @media (max-width: 586px) {
     /* .navbar {

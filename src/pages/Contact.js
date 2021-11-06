@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 
-const Contact = () => {
+const Contact = ({ setActive }) => {
+    useEffect(() => {
+        document.title = 'Contact Us';
+        setActive([false, false, false, true, false]);
+    }, []);
     return (
         <Container className='content-container'>
             <h3 className='committee_type'>

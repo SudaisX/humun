@@ -1,11 +1,15 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import committeesData from '../data/committeesData';
 import { Container } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 
-const Committee = () => {
+const Committee = ({ setActive }) => {
     const { id } = useParams();
     const { title, info, chair, guide, img } = committeesData.filter((c) => c.link === id)[0];
+    useEffect(() => {
+        document.title = title;
+        setActive([false, false, true, false, false]);
+    }, []);
     return (
         <Container className='content-container'>
             <div className='goback'>

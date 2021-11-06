@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import committeesData from '../data/committeesData';
 import CommitteeInfo from '../components/CommitteeInfo';
 
-const Committees = () => {
-    console.log(committeesData);
+const Committees = ({ setActive }) => {
+    useEffect(() => {
+        document.title = 'Committees';
+        setActive([false, false, true, false, false]);
+    }, []);
     return (
         <>
             <h2 className='page-title'>

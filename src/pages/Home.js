@@ -1,7 +1,11 @@
-import { React, useState } from 'react';
+import { React, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const Home = () => {
+const Home = ({ setActive }) => {
+    useEffect(() => {
+        document.title = 'HUMUN';
+        setActive([true, false, false, false, false]);
+    }, []);
     return (
         <>
             <section className='home'>

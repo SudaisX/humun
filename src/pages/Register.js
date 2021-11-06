@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 
-const Register = () => {
+const Register = ({ setActive }) => {
+    useEffect(() => {
+        document.title = 'Register';
+        setActive([false, false, false, false, true]);
+    }, []);
     return (
         <Container className='content-container'>
             {' '}
