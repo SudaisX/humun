@@ -5,7 +5,7 @@ const Home = ({ setActive }) => {
     useEffect(() => {
         document.title = 'HUMUN';
         setActive([true, false, false, false, false]);
-    }, []);
+    }, [setActive]);
     return (
         <>
             <section className='home'>

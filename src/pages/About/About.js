@@ -5,7 +5,7 @@ const About = ({ setActive }) => {
     useEffect(() => {
         document.title = 'About';
         setActive([false, true, false, false, false]);
-    }, []);
+    }, [setActive]);
     return (
         <Container className='content-container'>
             <h2 className='page-title'>

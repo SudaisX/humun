@@ -1,5 +1,5 @@
 import { React, useEffect } from 'react';
-import committeesData from '../data/committeesData';
+import committeesData from '../../data/committeesData';
 import { Container } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ const Committee = ({ setActive }) => {
     useEffect(() => {
         document.title = title;
         setActive([false, false, true, false, false]);
-    }, []);
+    }, [title, setActive]);
     return (
         <Container className='content-container'>
             <div className='goback'>

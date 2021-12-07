@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
-import committeesData from '../data/committeesData';
-import CommitteeInfo from '../components/CommitteeInfo';
+import committeesData from '../../data/committeesData';
+import CommitteeInfo from '../../components/CommitteeInfo';
+import { Container } from 'react-bootstrap';
 
 const Committees = ({ setActive }) => {
     useEffect(() => {
         document.title = 'Committees';
         setActive([false, false, true, false, false]);
-    }, []);
+    }, [setActive]);
     return (
-        <>
+        <Container>
             <h2 className='page-title'>
                 <span className='wavy'>Committees</span>
             </h2>
@@ -72,7 +73,7 @@ const Committees = ({ setActive }) => {
                     />
                 ))}
             </div>
-        </>
+        </Container>
     );
 };
 

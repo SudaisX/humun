@@ -5,7 +5,7 @@ const Register = ({ setActive }) => {
     useEffect(() => {
         document.title = 'Register';
         setActive([false, false, false, false, true]);
-    }, []);
+    }, [setActive]);
     return (
         <Container className='content-container'>
             {' '}
