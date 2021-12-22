@@ -5,8 +5,8 @@ import { Container } from 'react-bootstrap';
 
 const Committees = ({ setActive }) => {
     useEffect(() => {
-        document.title = 'Committees';
-        setActive([false, false, true, false, false]);
+        document.title = 'Committees | HUMUN';
+        setActive([false, false, false, true, false]);
     }, [setActive]);
     return (
         <Container>
@@ -23,30 +23,15 @@ const Committees = ({ setActive }) => {
                     quibusdam quod veniam voluptas!
                 </p>
                 <div className='committee_types'>
-                    <a href='#general-assembly'> 1. General Assembly </a>
-                    <a href='#economic-regional'> 2. Economic Social Council & Regional Bodies </a>
-                    <a href='#specialized'> 3. Specialized Agencies </a>
+                    <a href='#general-assembly'> 1. General Assemblies </a>
+                    <a href='#specialized'> 2. Specialized Agencies </a>
+                    <a href='#crisis'> 3. Crisis Committees </a>
                 </div>
 
                 <h3 className='committee_type' id='general-assembly'>
-                    General Assembly:
+                    General Assemblies:
                 </h3>
-                {committeesData.map((c) => (
-                    <CommitteeInfo
-                        key={c.id}
-                        title={c.title}
-                        chair={c.chair}
-                        info={c.info}
-                        img={c.img}
-                        link={c.link}
-                        guide={c.guide}
-                    />
-                ))}
-
-                <h3 className='committee_type' id='economic-regional'>
-                    Economic Social Council and Regional Bodies:
-                </h3>
-                {committeesData.map((c) => (
+                {committeesData.slice(0, 2).map((c) => (
                     <CommitteeInfo
                         key={c.id}
                         title={c.title}
@@ -61,7 +46,22 @@ const Committees = ({ setActive }) => {
                 <h3 className='committee_type' id='specialized'>
                     Specialized Agencies:
                 </h3>
-                {committeesData.map((c) => (
+                {committeesData.slice(2, 5).map((c) => (
+                    <CommitteeInfo
+                        key={c.id}
+                        title={c.title}
+                        chair={c.chair}
+                        info={c.info}
+                        img={c.img}
+                        link={c.link}
+                        guide={c.guide}
+                    />
+                ))}
+
+                <h3 className='committee_type' id='crisis'>
+                    Crisis Committees:
+                </h3>
+                {committeesData.slice(5).map((c) => (
                     <CommitteeInfo
                         key={c.id}
                         title={c.title}

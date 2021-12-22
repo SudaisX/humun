@@ -25,15 +25,15 @@ const Header = ({ active }) => {
                                 </Link>
                             </Nav.Link>
 
-                            {/* <Nav.Link>
+                            <Nav.Link>
                                 <Link
                                     to='/about'
                                     className={'navlink' + (active[1] ? ' active' : '')}>
                                     About
                                 </Link>
-                            </Nav.Link> */}
+                            </Nav.Link>
 
-                            <NavDropdown
+                            {/* <NavDropdown
                                 title='About'
                                 id='basic-nav-dropdown'
                                 className={active[1] ? ' active' : ''}>
@@ -52,7 +52,7 @@ const Header = ({ active }) => {
                                         President's Note
                                     </Link>
                                 </NavDropdown.Item>
-                            </NavDropdown>
+                            </NavDropdown> */}
 
                             {/* <Nav.Link>
                                 <Link
@@ -97,27 +97,25 @@ const Header = ({ active }) => {
                                 style={{ marginRight: '100px' }}
                                 className={active[4] ? ' active' : ''}>
                                 <NavDropdown.Item>
-                                    <Link to='/hdu' className='navlink-dropdown'>
+                                    <Link to='/register' className='navlink-dropdown'>
                                         Register Now
                                     </Link>
                                 </NavDropdown.Item>
+
                                 <NavDropdown.Item>
-                                    <Link to='/history' className='navlink-dropdown'>
-                                        How to Register
-                                    </Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <Link to='/presidentnote' className='navlink-dropdown'>
+                                    <Link to='/feestructure' className='navlink-dropdown'>
                                         Fee Structure
                                     </Link>
                                 </NavDropdown.Item>
+
                                 <NavDropdown.Item>
-                                    <Link to='/presidentnote' className='navlink-dropdown'>
-                                        Rules of Procedure
+                                    <Link to='/healthconcern' className='navlink-dropdown'>
+                                        Health Concern Form
                                     </Link>
                                 </NavDropdown.Item>
+
                                 <NavDropdown.Item>
-                                    <Link to='/presidentnote' className='navlink-dropdown'>
+                                    <Link to='/equitypolicy' className='navlink-dropdown'>
                                         Equity Policy
                                     </Link>
                                 </NavDropdown.Item>
@@ -125,8 +123,16 @@ const Header = ({ active }) => {
 
                             <Nav.Link>
                                 <Link
-                                    to='/contact'
+                                    to='/faqs'
                                     className={'navlink' + (active[5] ? ' active' : '')}>
+                                    FAQs
+                                </Link>
+                            </Nav.Link>
+
+                            <Nav.Link>
+                                <Link
+                                    to='/contact'
+                                    className={'navlink' + (active[6] ? ' active' : '')}>
                                     Contact Us
                                 </Link>
                             </Nav.Link>

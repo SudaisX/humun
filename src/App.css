@@ -40,7 +40,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* background-image: url('bg.jpeg');
+    /* background-color: #fdd8cc; */
+    background-image: '';
+    /*
     backdrop-filter: blur(2px);
     background-repeat: no-repeat;
     background-size: cover;
@@ -151,7 +153,7 @@ img {
 }
 
 #basic-nav-dropdown:hover {
-    border-bottom: 3px solid var(--color3);
+    border-bottom: 3px solid var(--color2);
 }
 
 .navlink {
@@ -164,7 +166,7 @@ img {
 
 .navlink:hover {
     color: black;
-    border-bottom: 3px solid var(--color3);
+    border-bottom: 3px solid var(--color2);
 }
 
 .navlink-dropdown {
@@ -292,6 +294,9 @@ img {
     margin: auto;
     padding: 100px 0 30px 0;
     width: 100%;
+
+    /* z-index: -1; */
+    /* background-size: 'cover'; */
     /* background-image: url('bg.jpeg');
     backdrop-filter: blur(5px);
     background-repeat: no-repeat;
@@ -306,6 +311,33 @@ img {
 
 .humun {
     font-size: 40px;
+}
+
+.home-background-image {
+    background-image: url('bg.jpeg');
+    border-radius: 10px;
+    height: 550px;
+    color: 'white';
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    background-repeat: 'no-repeat';
+}
+
+.navbar {
+    z-index: 999;
+}
+
+.home-background-text {
+    color: whitesmoke;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
 }
 
 /* .register-btn {
@@ -327,10 +359,10 @@ img {
     font-size: 20px;
     font-family: Arial;
     font-weight: 600;
-    color: var(--color1);
+    color: var(--color2);
     text-decoration: none;
     background: none;
-    border: 3px solid var(--color1);
+    border: 3px solid var(--color2);
     margin-top: 15px;
 }
 
@@ -340,10 +372,10 @@ img {
     font-size: 20px;
     font-family: Arial;
     font-weight: 600;
-    color: whitesmoke;
+    color: var(--color3);
     text-decoration: none;
-    background: var(--color1);
-    border: 3px solid var(--color1);
+    background: var(--color2);
+    border: 3px solid var(--color2);
     cursor: pointer;
     transition: width 2s ease-in 1s;
 }
@@ -427,7 +459,7 @@ img {
     }
 }
 
-/* TEAN
+/* TEAM
 ----------------------------------------------- */
 .president-image-container {
     display: flex;
@@ -478,6 +510,18 @@ img {
 
 .type-active {
     border-bottom: 3px solid var(--color2);
+}
+
+.committee_name {
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+.committee_name:hover {
+    color: var(--color2);
 }
 
 .committee_type {
@@ -576,6 +620,16 @@ img {
     margin-left: 20px;
 }
 
+.chair-name {
+    margin-bottom: 6px;
+}
+
+.chair-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
 @media (max-width: 586px) {
     .committee {
         display: flex;
@@ -635,4 +689,22 @@ img {
         grid-area: img;
         margin: 0 auto;
     }
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-title {
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
 }

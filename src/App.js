@@ -7,9 +7,9 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 
 import About from './pages/About/About';
-import HabibDebateUnion from './pages/About/HabibDebateUnion';
-import History from './pages/About/History';
-import PresidentNote from './pages/About/PresidentNote';
+// import HabibDebateUnion from './pages/About/HabibDebateUnion';
+// import History from './pages/About/History';
+// import PresidentNote from './pages/About/PresidentNote';
 
 import ExecutiveCouncil from './pages/Team/ExecutiveCouncil';
 import Secretariat from './pages/Team/Secretariat';
@@ -18,10 +18,11 @@ import Directorate from './pages/Team/Directorate';
 import Committees from './pages/Committees/Committees';
 import Committee from './pages/Committees/Committee';
 
-import HowToRegister from './pages/Registration/HowToRegister';
+import Register from './pages/Registration/Register';
 import FeeStructure from './pages/Registration/FeeStructure';
-import RulesOfProcedure from './pages/Registration/RulesOfProcedure';
 import EquityPolicy from './pages/Registration/EquityPolicy';
+
+import FAQs from './pages/FAQs';
 
 import Contact from './pages/Contact';
 
@@ -34,9 +35,9 @@ function App() {
 
             <Routes>
                 <Route path='/about' element={<About setActive={setActive} />} />
-                <Route path='/hdu' element={<HabibDebateUnion setActive={setActive} />} />
+                {/* <Route path='/hdu' element={<HabibDebateUnion setActive={setActive} />} />
                 <Route path='/history' element={<History setActive={setActive} />} />
-                <Route path='/presidentnote' element={<PresidentNote setActive={setActive} />} />
+                <Route path='/presidentnote' element={<PresidentNote setActive={setActive} />} /> */}
 
                 <Route
                     path='/executivecouncil'
@@ -48,13 +49,12 @@ function App() {
                 <Route path='/committees' element={<Committees setActive={setActive} />} />
                 <Route path='/committees/:id' element={<Committee setActive={setActive} />} />
 
-                <Route path='/howtoregister' element={<HowToRegister setActive={setActive} />} />
+                <Route path='/register' element={<Register setActive={setActive} />} />
                 <Route path='/feestructure' element={<FeeStructure setActive={setActive} />} />
-                <Route
-                    path='/rulesofprocedure'
-                    element={<RulesOfProcedure setActive={setActive} />}
-                />
+
                 <Route path='/equitypolicy' element={<EquityPolicy setActive={setActive} />} />
+
+                <Route path='/faqs' element={<FAQs setActive={setActive} />} />
 
                 <Route path='/contact' element={<Contact setActive={setActive} />} />
 
