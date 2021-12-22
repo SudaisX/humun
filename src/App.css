@@ -321,6 +321,7 @@ img {
     filter: blur(2px);
     -webkit-filter: blur(2px);
     background-repeat: 'no-repeat';
+    /* z-index: 1; */
 }
 
 .navbar {
@@ -513,7 +514,7 @@ img {
 }
 
 .committee_name {
-    margin-left: 40px;
+    /* margin-left: 40px; */
     margin-top: 20px;
     font-size: 25px;
     font-family: 'Lora', serif;

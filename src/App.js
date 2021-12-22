@@ -21,6 +21,7 @@ import Committee from './pages/Committees/Committee';
 import Register from './pages/Registration/Register';
 import FeeStructure from './pages/Registration/FeeStructure';
 import EquityPolicy from './pages/Registration/EquityPolicy';
+import HealthForm from './pages/Registration/HealthForm';
 
 import FAQs from './pages/FAQs';
 
@@ -51,8 +52,8 @@ function App() {
 
                 <Route path='/register' element={<Register setActive={setActive} />} />
                 <Route path='/feestructure' element={<FeeStructure setActive={setActive} />} />
-
                 <Route path='/equitypolicy' element={<EquityPolicy setActive={setActive} />} />
+                <Route path='/healthconcern' element={<HealthForm setActive={setActive} />} />
 
                 <Route path='/faqs' element={<FAQs setActive={setActive} />} />
 
