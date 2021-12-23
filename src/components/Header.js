@@ -190,7 +190,10 @@ const Header = ({ active }) => {
                                     role='button'
                                     data-bs-toggle='dropdown'
                                     aria-expanded='false'
-                                    style={{ color: active[0] ? 'white' : 'black' }}>
+                                    style={{
+                                        color: active[0] ? 'white' : 'black',
+                                        marginRight: '100px',
+                                    }}>
                                     Registration
                                 </a>
                                 <ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
