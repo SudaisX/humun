@@ -62,7 +62,8 @@ function App() {
                 <Route path='/' element={<Home setActive={setActive} />} />
             </Routes>
 
-            <Footer />
+            {active[0] ? '' : <Footer />}
+            {/* <Footer /> */}
         </>
     );
 }

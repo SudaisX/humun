@@ -6,16 +6,27 @@
 }
 
 @font-face {
+    font-family: 'Source-Serif-Pro';
+    src: url('./fonts/source-serif-pro/SourceSerifPro-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Lemon-Milk';
+    src: url('./fonts/lemon_milk/LEMONMILK-Regular.otf');
+}
+
+@font-face {
     font-family: 'Ramona-Bold';
     src: url('./fonts/Harmond/Ramona-Bold.ttf');
 }
 
 :root {
     --color1: #a75638;
-    --color2: #edd58d;
-    --color3: #6a163a;
+    --color2: rgb(237, 213, 141);
+    --color3: rgb(106, 22, 58);
     --color4: #907560;
     --color5: #b19276;
+    --color6: #edd5b8;
 }
 
 /* Global
@@ -40,7 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* background-color: #fdd8cc; */
+    /* background-color: #f4e4d4; */
     background-image: '';
     /*
     backdrop-filter: blur(2px);
@@ -164,13 +175,26 @@ img {
     padding-left: 14px;
 }
 
+.home-navlink {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px;
+    padding-left: 14px;
+}
+
 .navlink:hover {
     color: black;
     border-bottom: 3px solid var(--color2);
 }
 
+.home-navlink:hover {
+    color: white;
+    border-bottom: 3px solid var(--color2);
+}
+
 .navlink-dropdown {
-    color: black;
+    color: white;
     font-size: 15px;
     text-decoration: none;
     padding: 5px;
@@ -178,7 +202,7 @@ img {
 }
 
 .navlink-dropdown:hover {
-    color: black;
+    color: white;
 }
 
 .dropdown-item:hover {
@@ -191,6 +215,19 @@ img {
 
 .active {
     border-bottom: 3px solid var(--color3);
+}
+
+.home-navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 10px 10px;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.white-font {
+    color: 'white';
 }
 
 /* Responsive Navbar */
@@ -229,6 +266,7 @@ img {
     margin-top: auto;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    z-index: 99;
 }
 
 .email {
@@ -268,6 +306,17 @@ img {
     font-size: 19px;
 }
 
+.home-social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: rgba(0, 0, 0, 0.4) 1px 0 10px;
+}
+
 .social-list_item {
     margin: 0 0.5em;
 }
@@ -293,52 +342,70 @@ img {
     flex-direction: column;
     margin: auto;
     padding: 100px 0 30px 0;
-    width: 100%;
-
-    /* z-index: -1; */
-    /* background-size: 'cover'; */
-    /* background-image: url('bg.jpeg');
-    backdrop-filter: blur(5px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    background-color: #edd5b8; */
+    /* width: 100%; */
+    color: whitesmoke;
+    font-weight: bold;
+    z-index: 2;
+    text-align: center;
 }
 
 .hdu {
     font-size: 20px;
+    /* text-shadow: var(--color3) 1px 0 5px; */
 }
 
-.humun {
-    font-size: 40px;
+.hu {
+    font-size: 4rem;
+    font-family: 'Lemon-Milk', sans-serif;
+    margin-bottom: 0;
+}
+
+.mun {
+    font-size: 4rem;
+    font-family: 'Lemon-Milk', sans-serif;
+    color: #edd5bd;
+}
+
+.humun-date {
+    font-family: 'Source-Serif-Pro', sans-serif;
+    font-size: 1.5rem;
 }
 
 .home-background-image {
     background-image: url('bg.jpeg');
-    border-radius: 10px;
-    height: 550px;
+    /* border-radius: 10px; */
+    /* height: 550px; */
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
     color: 'white';
     filter: blur(2px);
     -webkit-filter: blur(2px);
-    background-repeat: 'no-repeat';
+    /* background-repeat: 'no-repeat'; */
     /* z-index: 1; */
+}
+
+.home-background-image-overlay {
+    background-color: rgba(0, 0, 0, 0.3); /* Black w/opacity/see-through */
+    /* border-radius: 10px; */
+    /* height: 550px; */
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .navbar {
     z-index: 999;
-}
-
-.home-background-text {
-    color: whitesmoke;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
 }
 
 /* .register-btn {
