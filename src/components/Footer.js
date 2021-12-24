@@ -9,21 +9,21 @@ const Footer = () => {
             <ul className='social-list'>
                 <li className='social-list_item'>
                     <a
-                        href='https://www.linkedin.com/in/sudaisyasin/'
+                        href='https://www.facebook.com/HabibUniversityMUN'
                         className=' social-list_link facebook'>
                         <i className='fab fa-facebook'></i>
                     </a>
                 </li>
                 <li className='social-list_item'>
-                    <a href='https://github.com/sudaisx' className='social-list_link instagram'>
+                    <a
+                        href='https://www.instagram.com/habib_mun/'
+                        className='social-list_link instagram'>
                         <i className='fab fa-instagram'></i>
                     </a>
                 </li>
 
                 <li className='social-list_item'>
-                    <a
-                        href='https://www.linkedin.com/in/sudaisyasin/'
-                        className=' social-list_link twitter'>
+                    <a href='https://www.twitter.com/' className=' social-list_link twitter'>
                         <i className='fab fa-twitter'></i>
                     </a>
                 </li>
