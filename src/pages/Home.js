@@ -25,22 +25,24 @@ const Home = ({ setActive }) => {
 
             <footer className='footer'>
                 <ul className='home-social-list'>
-                    <li className='social-list_item'>
+                    <li className='social-list_item' style={{ margin: '0' }}>
                         <a
                             href='https://www.facebook.com/humun/'
                             className=' social-list_link facebook'>
-                            <i className='fab fa-facebook'></i>
+                            <i className='fab fa-facebook' style={{ color: '#edd5b8' }}></i>
                         </a>
                     </li>
-                    <li className='social-list_item'>
+                    <li className='social-list_item' style={{ margin: '0' }}>
                         <a
                             href='https://instagram.com/humun'
                             className='social-list_link instagram'>
-                            <i className='fab fa-instagram'></i>
+                            <i className='fab fa-instagram' style={{ color: '#edd5b8' }}></i>
                         </a>
                     </li>
                 </ul>
-                <small className='footer-text'>&copy; HUMUN 2021</small>
+                <small className='footer-text' style={{ color: 'white' }}>
+                    &copy; HUMUN 2021
+                </small>
             </footer>
         </>
     );

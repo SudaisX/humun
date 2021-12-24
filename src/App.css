@@ -58,7 +58,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: white; */
-    /* background-color: #edd5b8; */
+    /* background-color: #f4e4d4; */
 }
 
 #root {
@@ -282,6 +282,7 @@ img {
 .facebook {
     color: #3b5998;
 }
+
 .twitter {
     color: #00aced;
 }
@@ -391,7 +392,7 @@ img {
 }
 
 .home-background-image-overlay {
-    background-color: rgba(0, 0, 0, 0.3); /* Black w/opacity/see-through */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/opacity/see-through */
     /* border-radius: 10px; */
     /* height: 550px; */
     background-size: cover;
