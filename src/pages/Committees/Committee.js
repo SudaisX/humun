@@ -1,6 +1,6 @@
 import { React, useEffect } from 'react';
 import committeesData from '../../data/committeesData';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 
 const Committee = ({ setActive }) => {
