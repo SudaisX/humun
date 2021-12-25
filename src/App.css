@@ -83,7 +83,7 @@ img {
 }
 
 .content-container {
-    /* max-width: 1000px; */
+    max-width: 1000px;
     margin: 0 auto;
     font-family: 'Karla', sans-serif;
     background-color: rgba(0, 0, 0, 0.4);
@@ -430,6 +430,8 @@ img {
     background: none;
     border: 3px solid var(--color2);
     margin-top: 15px;
+    position: relative;
+    transition: 0.5s;
 }
 
 .register-btn:hover {
@@ -440,10 +442,25 @@ img {
     font-weight: 600;
     color: var(--color3);
     text-decoration: none;
-    background: var(--color2);
+    /* background: var(--color2); */
     border: 3px solid var(--color2);
     cursor: pointer;
-    transition: width 2s ease-in 1s;
+}
+
+.register-btn span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--color2);
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 29px;
+}
+
+.register-btn:hover span {
+    width: 100%;
 }
 
 @media (max-width: 586px) {

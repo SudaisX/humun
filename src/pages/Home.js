@@ -20,6 +20,7 @@ const Home = ({ setActive }) => {
                     <i className='fa fa-calendar' aria-hidden='true'></i> February 4-6, 2021
                 </p>
                 <Link className='register-btn' to='/register'>
+                    <span></span>
                     Register Now! <i class='fa fa-check-circle' />
                 </Link>
             </Container>

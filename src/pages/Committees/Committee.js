@@ -20,7 +20,7 @@ const Committee = ({ setActive }) => {
 
             <div className='committee-container'>
                 <h1>{title}</h1>
-                <img src={img} alt={title} style={{ maxWidth: '250px', marginTop: '30px' }} />
+                <img src={img} alt={title} style={{ maxWidth: '250px', marginTop: '20px' }} />
 
                 <div
                     className='committee-directorsd'
@@ -37,7 +37,7 @@ const Committee = ({ setActive }) => {
                     ))}
                 </div>
 
-                <p style={{ maxWidth: '80%', marginTop: '30px' }}>{info}</p>
+                <p style={{ marginTop: '30px' }}>{info}</p>
 
                 <div className='committee-page-btns' style={{ marginTop: '20px' }}>
                     <a className='committee_link committee_info-link' href={'/guides/' + guide}>
