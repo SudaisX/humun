@@ -26,7 +26,7 @@ const ExecutiveCouncil = ({ setActive }) => {
                 <Col className='president-image-container' lg={4}>
                     <img
                         className='president-image'
-                        src='/images/executive/mariam.jpeg'
+                        src='/images/executive/mariam.png'
                         alt='marium jamal - president'></img>
                 </Col>
                 <Col className='president-content' lg={8}>
@@ -96,32 +96,32 @@ const ExecutiveCouncil = ({ setActive }) => {
                 <TeamCard
                     name='Mahad Akbar'
                     title='Secretary General'
-                    img='/images/executive/mahad.jpeg'
+                    img='/images/executive/mahad.png'
                 />
                 <TeamCard
                     name='Wasiq Imran'
                     title='Director General'
-                    img='/images/executive/wasiq.jpeg'
+                    img='/images/executive/wasiq.png'
                 />
                 <TeamCard
                     name='Umama Rizwan'
                     title='Deputy Director General'
-                    img='/images/executive/umama.jpeg'
+                    img='/images/executive/umama.png'
                 />
                 <TeamCard
                     name='Zainab Javaid'
                     title='Under Secretary General'
-                    img='/images/executive/zainab.jpeg'
+                    img='/images/executive/zainab.png'
                 />
                 <TeamCard
                     name='Hafsa Khurram'
                     title='Under Secretary General'
-                    img='/images/executive/hafsa.jpeg'
+                    img='/images/executive/hafsa.png'
                 />
                 <TeamCard
                     name='Ashahad Abbas'
                     title='Under Secretary General'
-                    img='/images/executive/ashahad.jpeg'
+                    img='/images/executive/ashahad.png'
                 />
             </div>
         </Container>

@@ -267,12 +267,16 @@ img {
 }
 
 .email {
-    color: var(--color1);
+    color: #edd5b8;
     text-decoration: none;
+    font-weight: bolder;
+    text-shadow: rgba(0, 0, 0, 0.4) 1px 0 10px;
 }
 
 .email:hover {
-    color: #a86750;
+    /* color: #a86750; */
+    color: #edd5b8;
+    opacity: 0.7;
     text-decoration: underline;
 }
 
@@ -301,7 +305,9 @@ img {
     justify-content: center;
     margin: 1em 0;
     padding: 0;
-    font-size: 19px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: rgba(0, 0, 0, 0.4) 1px 0 10px;
 }
 
 .home-social-list {
@@ -315,6 +321,10 @@ img {
     text-shadow: rgba(0, 0, 0, 0.4) 1px 0 10px;
 }
 
+.social-list-icon {
+    color: #edd5b8;
+}
+
 .social-list_item {
     margin: 0 0.5em;
 }
@@ -324,7 +334,7 @@ img {
 }
 
 .footer-text {
-    color: gray;
+    color: white;
 }
 
 /* ---------------------- PAGES ------------------
@@ -427,11 +437,12 @@ img {
     font-weight: 600;
     color: var(--color2);
     text-decoration: none;
-    background: none;
+    background-color: none;
     border: 3px solid var(--color2);
     margin-top: 15px;
     position: relative;
     transition: 0.5s;
+    /* transition: width 0.5s ease-in-out, background-color 0.3s ease-in-out; */
 }
 
 .register-btn:hover {
@@ -442,7 +453,7 @@ img {
     font-weight: 600;
     color: var(--color3);
     text-decoration: none;
-    /* background: var(--color2); */
+    background-color: var(--color2);
     border: 3px solid var(--color2);
     cursor: pointer;
 }
@@ -455,8 +466,9 @@ img {
     left: 0;
     background: var(--color2);
     z-index: -1;
-    transition: 0.5s;
+    /* transition: width 0.5s ease-in-out; */
     border-radius: 29px;
+    transition: 0.5s;
 }
 
 .register-btn:hover span {

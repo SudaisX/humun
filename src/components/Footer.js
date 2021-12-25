@@ -10,21 +10,19 @@ const Footer = () => {
                 <li className='social-list_item'>
                     <a
                         href='https://www.facebook.com/HabibUniversityMUN'
-                        className=' social-list_link facebook'>
-                        <i className='fab fa-facebook'></i>
+                        className=' social-list_link'>
+                        <i className='fab fa-facebook social-list-icon'></i>
                     </a>
                 </li>
                 <li className='social-list_item'>
-                    <a
-                        href='https://www.instagram.com/habib_mun/'
-                        className='social-list_link instagram'>
-                        <i className='fab fa-instagram'></i>
+                    <a href='https://www.instagram.com/habib_mun/' className='social-list_link'>
+                        <i className='fab fa-instagram social-list-icon'></i>
                     </a>
                 </li>
 
                 <li className='social-list_item'>
-                    <a href='https://www.twitter.com/' className=' social-list_link twitter'>
-                        <i className='fab fa-twitter'></i>
+                    <a href='https://www.twitter.com/' className=' social-list_link'>
+                        <i className='fab fa-twitter social-list-icon'></i>
                     </a>
                 </li>
             </ul>
