@@ -59,6 +59,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
     color: white;
+    font-family: 'Source-Serif-Pro', serif;
+
     /* background-color: #f4e4d4; */
 }
 
@@ -124,6 +126,8 @@ img {
 
 .navbar {
     height: 100px;
+    font-family: 'Source-Serif-Pro';
+    /* font-size: 10px; */
 }
 
 .nav-title {
