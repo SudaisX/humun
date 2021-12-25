@@ -81,6 +81,7 @@ img {
     font-size: 40px;
     font-weight: normal;
     text-align: center;
+    font-family: 'Lemon-Milk', sans-serif;
     /* color: white; */
 }
 
@@ -639,7 +640,7 @@ img {
     /* margin-left: 40px; */
     margin-top: 20px;
     font-size: 25px;
-    font-family: 'Lora', serif;
+    font-family: 'Lemon-Milk', serif;
     font-weight: bold;
 }
 
@@ -651,16 +652,16 @@ img {
     margin-left: 30px;
     margin-top: 30px;
     font-size: 30px;
-    font-family: 'Lora', serif;
+    font-family: 'Lemon-Milk', serif;
     font-weight: bold;
 }
 
 .committee_type:hover {
-    color: var(--color1);
+    color: var(--color2);
 }
 
 .committee_title {
-    font-family: 'Lora', serif;
+    font-family: 'Lemon-Milk', serif;
 }
 
 .committee_date {
@@ -828,6 +829,6 @@ img {
 
 .contact-title {
     font-size: 20px;
-    font-family: 'Lora', serif;
+    font-family: 'Lemon-Milk', serif;
     font-weight: bold;
 }
