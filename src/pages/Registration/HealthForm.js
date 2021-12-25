@@ -13,7 +13,7 @@ const Register = ({ setActive }) => {
             <h3 className='committee_type'>
                 <span className='wavy'>Registration</span>
             </h3> */}
-            <JotformEmbed src='https://www.jotform.com/form/213422949107455' />
+            <JotformEmbed src='https://form.jotform.com/213442914727457' />
         </Container>
     );
 };

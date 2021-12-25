@@ -13,13 +13,19 @@ const Header = ({ active }) => {
                         }
                     }>
                     <Navbar.Brand>
-                        <div>
-                            <img
-                                src='/images/logo-right.png'
-                                alt='logo'
-                                style={{ width: '200px' }}
-                            />
-                        </div>
+                        {active[0] ? (
+                            ''
+                        ) : (
+                            <Link to='/'>
+                                <div>
+                                    <img
+                                        src='/images/logo-right.png'
+                                        alt='logo'
+                                        style={{ width: '200px' }}
+                                    />
+                                </div>
+                            </Link>
+                        )}
                     </Navbar.Brand>
                     <Navbar.Toggle
                         aria-controls='basic-navbar-nav'
@@ -27,15 +33,11 @@ const Header = ({ active }) => {
                     />
                     <Navbar.Collapse
                         id='basic-navbar-nav'
+                        // className={active[0] ? 'home-navbar-collapse' : 'navbar-collapse-nonhome'}>
                         className={active[0] ? 'home-navbar-collapse' : ''}>
                         <Nav className='ms-auto'>
                             <Nav.Link>
-                                <Link
-                                    to='/'
-                                    className={
-                                        (active[0] ? 'home-navlink' : 'navlink') +
-                                        (active[0] ? ' active' : '')
-                                    }>
+                                <Link to='/' className={'navlink' + (active[0] ? ' active' : '')}>
                                     Home
                                 </Link>
                             </Nav.Link>
@@ -43,10 +45,7 @@ const Header = ({ active }) => {
                             <Nav.Link>
                                 <Link
                                     to='/about'
-                                    className={
-                                        (active[0] ? 'home-navlink' : 'navlink') +
-                                        (active[1] ? ' active' : '')
-                                    }>
+                                    className={'navlink' + (active[1] ? ' active' : '')}>
                                     About
                                 </Link>
                             </Nav.Link>
@@ -110,8 +109,7 @@ const Header = ({ active }) => {
                                     id='basic-nav-dropdown'
                                     role='button'
                                     data-bs-toggle='dropdown'
-                                    aria-expanded='false'
-                                    style={{ color: active[0] ? 'white' : 'black' }}>
+                                    aria-expanded='false'>
                                     Meet the Team
                                 </a>
                                 <ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
@@ -142,10 +140,7 @@ const Header = ({ active }) => {
                             <Nav.Link>
                                 <Link
                                     to='/committees'
-                                    className={
-                                        (active[0] ? 'home-navlink' : 'navlink') +
-                                        (active[3] ? ' active' : '')
-                                    }>
+                                    className={'navlink' + (active[3] ? ' active' : '')}>
                                     Committees
                                 </Link>
                             </Nav.Link>
@@ -191,7 +186,6 @@ const Header = ({ active }) => {
                                     data-bs-toggle='dropdown'
                                     aria-expanded='false'
                                     style={{
-                                        color: active[0] ? 'white' : 'black',
                                         marginRight: '100px',
                                     }}>
                                     Registration
@@ -231,10 +225,7 @@ const Header = ({ active }) => {
                             <Nav.Link>
                                 <Link
                                     to='/faqs'
-                                    className={
-                                        (active[0] ? 'home-navlink' : 'navlink') +
-                                        (active[5] ? ' active' : '')
-                                    }>
+                                    className={'navlink' + (active[5] ? ' active' : '')}>
                                     FAQs
                                 </Link>
                             </Nav.Link>
@@ -242,10 +233,7 @@ const Header = ({ active }) => {
                             <Nav.Link>
                                 <Link
                                     to='/contact'
-                                    className={
-                                        (active[0] ? 'home-navlink' : 'navlink') +
-                                        (active[6] ? ' active' : '')
-                                    }>
+                                    className={'navlink' + (active[6] ? ' active' : '')}>
                                     Contact Us
                                 </Link>
                             </Nav.Link>

@@ -9,7 +9,7 @@ const Committees = ({ setActive }) => {
         setActive([false, false, false, true, false]);
     }, [setActive]);
     return (
-        <Container>
+        <Container className='content-container'>
             <h2 className='page-title'>
                 <span className='wavy'>Committees</span>
             </h2>

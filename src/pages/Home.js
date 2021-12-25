@@ -12,7 +12,8 @@ const Home = ({ setActive }) => {
             <div className='home home-background-image'></div>
             <div className='home home-background-image-overlay'></div>
 
-            <Container className='home'>
+            <Container className='home' style={{ paddingTop: '30px' }}>
+                <img src='/images/logo.png' alt='logo' style={{ maxWidth: '150px' }} />
                 <p className='hu'>Habib University</p>
                 <p className='mun'>Model United Nations IV</p>
                 <p className='humun-date'>
@@ -40,9 +41,9 @@ const Home = ({ setActive }) => {
                         </a>
                     </li>
                 </ul>
-                <small className='footer-text' style={{ color: 'white' }}>
+                {/* <small className='footer-text' style={{ color: 'white' }}>
                     &copy; HUMUN 2021
-                </small>
+                </small> */}
             </footer>
         </>
     );

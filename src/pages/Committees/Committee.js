@@ -17,13 +17,14 @@ const Committee = ({ setActive }) => {
                     Go Back
                 </Link>
             </div>
-            <h1>{title}</h1>
 
-            <Row>
-                <Col md={4}>
-                    <img src={img} alt={title} />
-                </Col>
-                <Col>
+            <div className='committee-container'>
+                <h1>{title}</h1>
+                <img src={img} alt={title} style={{ maxWidth: '250px', marginTop: '30px' }} />
+
+                <div
+                    className='committee-directorsd'
+                    style={{ maxWidth: '80%', marginTop: '20px' }}>
                     {chair.map((c) => (
                         <p className='chair-name'>
                             <span className='chair-title'>Chair:</span> {c}
@@ -34,14 +35,16 @@ const Committee = ({ setActive }) => {
                             <span className='chair-title'>ACD:</span> {c}
                         </p>
                     ))}
-                    <p>{info}</p>
-                    <div className='committee-page-btns'>
-                        <a className='committee_link committee_info-link' href={'/guides/' + guide}>
-                            Click here to Download Guide
-                        </a>
-                    </div>
-                </Col>
-            </Row>
+                </div>
+
+                <p style={{ maxWidth: '80%', marginTop: '30px' }}>{info}</p>
+
+                <div className='committee-page-btns' style={{ marginTop: '20px' }}>
+                    <a className='committee_link committee_info-link' href={'/guides/' + guide}>
+                        Download Guide
+                    </a>
+                </div>
+            </div>
 
             <div className='committee-page'></div>
         </Container>

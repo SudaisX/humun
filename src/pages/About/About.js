@@ -40,17 +40,19 @@ const About = ({ setActive }) => {
                             and finals at Pakistan Junior and Senior Nationals to name a few.
                         </p>
                     </Row>{' '}
+                    <Row>
+                        <p>
+                            HDU has also made its mark in the MUN circuit with the start of Habib’s
+                            first Model United Nations conference back in October 2017. The
+                            conference after its three iterations has successfully provided an
+                            inclusive platform to all MUN and debate aspirants. Moreover, we sent
+                            out our first delegation to Harvard World MUN 2021, where our delegates
+                            won two Honorable Mention awards.
+                        </p>
+                    </Row>{' '}
                 </Col>
             </Row>
-            <Row>
-                <p>
-                    HDU has also made its mark in the MUN circuit with the start of Habib’s first
-                    Model United Nations conference back in October 2017. The conference after its
-                    three iterations has successfully provided an inclusive platform to all MUN and
-                    debate aspirants. Moreover, we sent out our first delegation to Harvard World
-                    MUN 2021, where our delegates won two Honorable Mention awards.
-                </p>
-            </Row>{' '}
+
             <Row>
                 <p>
                     Apart from this, our team conducts weekly training sessions and practice debates
