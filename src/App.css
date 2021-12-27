@@ -942,11 +942,11 @@ img {
 }
 
 .row-box {
-    height: 100px;
+    height: 140px;
 }
 
 .row-box-half {
-    height: 50px;
+    height: 70px;
 }
 
 .fee-dates {
@@ -1016,4 +1016,23 @@ img {
     .row-box-half {
         height: initial;
     }
+}
+
+.accordion-button {
+    font-family: 'Lemon-Milk';
+    background-color: var(--color6);
+    color: var(--color3);
+    border: none;
+}
+
+.accordion-button[aria-expanded='true'] {
+    background-color: var(--color6);
+    color: var(--color3);
+    border: none;
+}
+
+.accordion-body {
+    background-color: var(--color3);
+    color: var(--color6);
+    font-family: 'Source-Serif-Pro';
 }

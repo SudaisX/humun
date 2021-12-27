@@ -205,13 +205,13 @@ const Header = ({ active }) => {
                                             Fee Structure
                                         </Link>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <Link
                                             to='/healthconcern'
                                             className='navlink-dropdown dropdown-item'>
                                             Health Concern Form
                                         </Link>
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <Link
                                             to='/equitypolicy'

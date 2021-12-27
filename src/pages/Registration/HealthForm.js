@@ -9,10 +9,7 @@ const Register = ({ setActive }) => {
     }, [setActive]);
     return (
         <Container className='content-container'>
-            {/* {' '}
-            <h3 className='committee_type'>
-                <span className='wavy'>Registration</span>
-            </h3> */}
+            <h3 className='page-title'>Health Concern Form</h3>
             <JotformEmbed src='https://form.jotform.com/213442914727457' />
         </Container>
     );
