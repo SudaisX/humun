@@ -1,5 +1,5 @@
 import { React, useEffect } from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 const About = ({ setActive }) => {
     useEffect(() => {
