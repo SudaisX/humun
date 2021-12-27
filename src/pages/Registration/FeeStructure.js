@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const FeeStructure = ({ setActive }) => {
     useEffect(() => {
@@ -7,13 +8,84 @@ const FeeStructure = ({ setActive }) => {
         setActive([false, false, false, false, true, false, false]);
     }, [setActive]);
     return (
-        <Container
-            className='content-container'
-            style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <h2 className='page-title'>
-                <span>Fee Structure</span>
-            </h2>
-            <img src='/images/fee.jpg' alt='Fee Structure' style={{ maxHeight: '700px' }} />
+        <Container className='content-container'>
+            <h2 className='page-title'>Fee Structure</h2>
+
+            <Row className='mt-4'>
+                <Row className='row-box'>
+                    <Col md={3}></Col>
+                    <Col md={3} className='fee-dates fee-box'>
+                        Dates
+                    </Col>
+                    <Col md={6}>
+                        <Row className='fee-box fee-structure row-box-half'>Fee Structure</Row>
+                        <Row className='row-box-half'>
+                            <Col md={6} className='fee-box fee-delegate'>
+                                Delegate
+                            </Col>
+                            <Col md={6} className='fee-box fee-delegation'>
+                                Delegation
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+
+                <Row className='row-box'>
+                    <Col md={3} className='fee-box fee-early-bird'>
+                        Early Bird
+                    </Col>
+                    <Col md={3} className='fee-box-content'>
+                        <Row>Dec 10, 2021</Row>
+                        <Row style={{ color: '#6a163a' }}>-</Row>
+                        <Row>Dec 27, 2021</Row>
+                    </Col>
+                    <Col md={3} className='fee-box-content'>
+                        PKR 2500
+                    </Col>
+                    <Col md={3} className='fee-box-content'>
+                        PKR 3000
+                    </Col>
+                </Row>
+
+                <Row className='row-box'>
+                    <Col md={3} className='fee-box fee-regular'>
+                        Regular
+                    </Col>
+                    <Col md={3} className='fee-box-content'>
+                        <Row>Dec 25, 2021</Row>
+                        <Row style={{ color: '#6a163a' }}>-</Row>
+                        <Row>Jan 01, 2022</Row>
+                    </Col>
+                    <Col md={3} className='fee-box-content'>
+                        PKR 3000
+                    </Col>
+                    <Col md={3} className='fee-box-content'>
+                        PKR 3000
+                    </Col>
+                </Row>
+            </Row>
+
+            <div className='instructions'>
+                <h1 className='committee_type'>Instructions:</h1>
+                <ol className='contact-body-text'>
+                    <li>
+                        Before you start the registration process, please double check the details
+                        mentioned in the table above.
+                    </li>
+                    <li>
+                        Make sure you are vaccinated and have filled the vaccination form. If you
+                        have not filled the form, click here.
+                    </li>
+                    <li>Please provide correct information in the registration form.</li>
+                </ol>
+            </div>
+
+            <div className='register-btn-container'>
+                <Link className='register-btn' to='/register'>
+                    <span></span>
+                    Register Now! <i class='fa fa-check-circle' />
+                </Link>
+            </div>
         </Container>
     );
 };
