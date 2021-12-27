@@ -1,7 +1,8 @@
 const committees = [
     {
         id: 1,
-        title: 'Disarmament and International Security Committee (DISEC)',
+        shortTitle: 'DISEC',
+        title: 'Disarmament and International Security Committee',
         chair: ['Zainab Javaid', 'Ahmed Shiwani'],
         acd: ['Mustafa Hussain'],
         info: 'The heart and the First Committee of the United Nations General Assembly is the cornerstone of international and regional security as well as disarmament. Even though the committee’s resolutions are non-binding, the policymaking that DISEC poses is monumental on its own and for other committees, especially for maintaining international peace, ensuring global cooperation, crisis mitigation, regulation of armaments, and ensuring disarmament, etc. In essence, the highly complex geopolitical world with even more complex security policies relies on DISEC’s mandate to synthesise global and regional peace by maintaining global security and stability. For this purpose, the role of the United Nations Charter, and DISEC’s two-tier supporting bodies, the United Nations Disarmament Commission and Conference on Disarmament, are imperative to incorporate the international scope of security. By extension, DISEC deals with striking arrays of security issues- from the regulation of drone technologies to reducing military budgets.',
@@ -12,6 +13,7 @@ const committees = [
     },
     {
         id: 2,
+        shortTitle: 'SOCHUM',
         title: 'Social, Cultural, and Humanitarian Committee (SOCHUM)',
         chair: ['Qazi Muhammad Talha', 'Hafsa Khurram', 'Ilma Eva'],
         acd: ['Ali Arif', 'Uzair Rafiq'],
@@ -22,7 +24,8 @@ const committees = [
     },
     {
         id: 3,
-        title: 'UNCSW',
+        shortTitle: 'UNCSW',
+        title: 'United Nations Comission on the Status of Women',
         chair: ['Umama Ishtiaq', 'Shanzay Yousuf', 'Rizma Hamid Baig Eva'],
         acd: ['Ruhama Naeem'],
         info: "The Commission on the Status of Women (CSW), under ECOSOC, is the principal global intergovernmental body exclusively dedicated to promoting gender equality and women's empowerment. Standing as one of the main organs in the United Nations, CSW is vital in promoting the notion of understanding the concerns surrounding women's rights through an intersectional lens. It is monumental in promoting women's rights under regional or cultural sensitive frameworks, scrutinising the policies and laws that violate the provision of women rights and reforming global standards on gender equality and women's empowerment, inclusive to the diverse range of feminine identities. It was a unique official structure for drawing attention to women's concerns and leadership within the UN at the time of its inception. Starting with women only representatives, as the number of participants has increased, CSW maintains a majority of female delegates; 'To raise the status of women, irrespective of nationality, race, language or religion, to equality with men in all fields of human enterprise, and to eliminate all discrimination against women in the provisions of statutory law, in legal maxims or rules, or in the interpretation of customary law' has been the guiding principle since the first session. This year, at HUMUN IV, the secretariat will uphold the equitable framework that CSW has produced and actively expand the definitions revolving around 'women' and 'gender' for an inclusive and holistic approach.",
@@ -32,6 +35,7 @@ const committees = [
     },
     {
         id: 4,
+        shortTitle: 'PNA',
         title: 'Pakistan National Assembly (PNA)',
         chair: ['Anzal Abbas Jaffari', 'Yelmaz Mujtaba', 'Fahmida Mirza'],
         acd: ['Markhan Mushtaque'],
@@ -42,7 +46,8 @@ const committees = [
     },
     {
         id: 5,
-        title: 'HUNSC',
+        shortTitle: 'HUNSC',
+        title: 'Historical United Nations Security Council',
         chair: ['Amna Inayat Khan', 'Sara Intikhab', 'Saad Farooqi'],
         acd: ['Shahzar Khalique'],
         info: "An immensely crucial committee for every MUN conference, but with a twist; the Historical United Nations Security Council aims to deliver in its role as a definitive peacemaker and mediator in crises that produce a significant impact across the globe, but ones that were set in the past. In this committee, the standard conventions of the Security Council will be followed, and the urgency for maintaining peace and human security would remain, but the Historical aspect would demand a retrospective debate. The crown jewel’s resolutions are binding, and as the historical roots dictate, Historical United Nations Security Council will not shy away from putting international sanctions and commissioning military actions. Expect the debate to be politically progressive but not far from the complexities that arise from peacekeeping pursuits or the lack thereof. A delegate is expected to have an exceptional understanding of the historical crisis and the world order during which the crisis is set and provide appreciable solutions of what possibly should have happened, which would've changed how we view the world as is today.",
@@ -52,7 +57,8 @@ const committees = [
     },
     {
         id: 6,
-        title: 'Irish Republican Army (IRA)',
+        shortTitle: 'IRA',
+        title: 'Irish Republican Army',
         chair: ['Ashahad Abbas Jokhio', 'Humza Nadeem Jami'],
         acd: ['Maliha Irfan', 'Fida Hussain'],
         info: 'The Third and the Social, Cultural, and Humanitarian Committee (SOCHUM or C3) of the United Nations General Assembly is a luminary course of action to maintain and protect human rights on international and regional avenues. The foundations of this committee are firmly built on the United Nations Declaration on Human Rights. Hence, it is viable in addressing the pressing questions on the matter of human rights violation, humanitarian intervention, affairs, and policies and maintenance of cultural sovereignty. Under the mandate of SOCHUM fall various agendas inclusive of but not limited to: the welfare of refugees, protection of children, rights of gender and sexual minorities, the treatment of displaced persons, elimination of racial discrimination, questions on self-determination, provisions on the criminal justice system, etc. Since SOCHUM focuses on untangling the complexities regarding humanitarian affairs and refugee crises, the third committee works closely with agencies like United Nations Human Rights Office and United Nations High Commissioner for Refugees.',
@@ -62,7 +68,8 @@ const committees = [
     },
     {
         id: 7,
-        title: 'TLOP',
+        shortTitle: 'TLOP',
+        title: 'The League of Planets',
         chair: ['Zuhayr Muneeb', 'Hamza Farookhi'],
         acd: ['Fawwaz Ahmed', 'Rida Khan'],
         info: 'The year is 2357, the Solar System has been colonized. With Various planets and their satellites serving either as new habitats for our species or being mined for their resources. A few corporations for the past few centuries have remained in control of most of these assets, making them the de-facto rulers of the Solar System.\n Earth, once the cradle for all life has been suffering a long period of decay. Terrible environmental disasters wreak havoc upon all corners of the world. Growing uncertainty and lack of any substantial assistance have forced the masses to rise up in rebellion. Day by day forces of resistance grows stronger. There now exist resistance groups on a global scale. They are able to organize and disrupt the production, essential transactions and crucial procedures of the ruling corporations through any means viable. Their message is clear, that Earth and its people will no longer be exploited by elites living Off-Planet, that change will be brought either through peace or through violence.  \n The instability on Earth threatens all its neighbours, near or far. Dissent and unrest on this scale if not quelled properly will traverse the Solar System at the speed of light. Putting in danger the order organized by the ruling corporations. The order that is necessary to maintain for the continuation of businesses and the growth of profits.  \n The League of Planets has formed this Special Commission to deal with the crisis on Earth. The Commission has invited all personal deemed as influential and essential in dealing with this matter. Including the CEOs of the major corporations, leaders from different resistance groups on Earth, central diplomats as well as other important figures. \n The League of Planets must decide on a lasting solution for the problems on Planet Earth. Whether Earth is worth saving, if so then how best to do it. Or to wipe the planet clean using Nuclear Weapons to prevent any chaos from spreading in the rest of the Solar System. In this pursuit, delegates must lookout for the most beneficial situation for them, whether as a CEO, politician or resistance leader.',

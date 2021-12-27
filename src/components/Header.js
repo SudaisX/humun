@@ -34,7 +34,7 @@ const Header = ({ active }) => {
                     <Navbar.Collapse
                         id='basic-navbar-nav'
                         // className={active[0] ? 'home-navbar-collapse' : 'navbar-collapse-nonhome'}>
-                        className={active[0] ? 'home-navbar-collapse' : ''}>
+                        className={active[0] ? 'home-navbar-collapse' : 'navbar-collapse'}>
                         <Nav className='ms-auto'>
                             <Nav.Link>
                                 <Link to='/' className={'navlink' + (active[0] ? ' active' : '')}>
