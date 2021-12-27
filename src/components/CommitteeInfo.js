@@ -1,22 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const CommitteeInfo = ({ title, chair, info, img, link, guide }) => {
+const CommitteeInfo = ({ shortTitle, title, chair, info, img, link, guide }) => {
     console.log(title);
     return (
         <div className='committee'>
             <div className='committee_overview'>
-                <h4 className='committee_title'>{title}</h4>
+                <h4 className='committee_title'>
+                    <span className='committee_title_short'>{shortTitle}</span>: {title}
+                </h4>
                 <p className='committee_date'> </p>
             </div>
             <div className='committee-chair'>{/* <bold>Chair:</bold> {chair} */}</div>
             <p className='committee_info'>{info.slice(0, 450)}..</p>
             <p className='committee-links'>
-                <Link className='committee_link committee_info-link' to={'/committees/' + link}>
-                    Learn More
+                <Link
+                    className='fancy-btn'
+                    style={{ fontSize: '14px', marginRight: '20px' }}
+                    to={'/committees/' + link}>
+                    <span></span>Learn More
                 </Link>
-                <Link className='committee_link committee_info-link' to={'/guides/' + guide}>
-                    Download Guide
+                <Link className='fancy-btn' style={{ fontSize: '14px' }} to={'/guides/' + guide}>
+                    <span></span>Download Guide
                 </Link>
             </p>
             <img className='committee_img' src={img} alt={title}></img>
