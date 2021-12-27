@@ -533,6 +533,18 @@ img {
 /* ABOUT ME
 ----------------------------------------------- */
 
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-body-text {
+    text-align: justify;
+    color: var(--color6);
+}
+
 .aboutme {
     margin: 20px auto;
     max-width: 1000px;

@@ -12,6 +12,12 @@ const Committees = ({ setActive }) => {
         <Container className='content-container'>
             <h2 className='page-title'>Committees</h2>
             <div className='committees'>
+                <p className='about-body-text'>
+                    The committees for HUMUN IV are listed below. These seven committees are the
+                    heart and soul of HUMUN, contributing in the formation of the core themes. These
+                    committees were created with the intention of sparking discussions that are not
+                    only thought-provoking but also push people out of their comfort zones.
+                </p>
                 <div className='committee_types'>
                     <a href='#general-assembly'> 1. General Assemblies </a>
                     <a href='#specialized'> 2. Specialized Agencies </a>
