@@ -11,21 +11,20 @@ const Committees = ({ setActive }) => {
     return (
         <Container className='content-container'>
             <h2 className='page-title'>Committees</h2>
-            <div className='committees'>
-                <p className='about-body-text'>
-                    The committees for HUMUN IV are listed below. These seven committees are the
-                    heart and soul of HUMUN, contributing in the formation of the core themes. These
-                    committees were created with the intention of sparking discussions that are not
-                    only thought-provoking but also push people out of their comfort zones.
-                </p>
+            <div className='committees sans-font'>
                 <div className='committee_types'>
                     <a href='#general-assembly'> 1. General Assemblies </a>
                     <a href='#specialized'> 2. Specialized Agencies </a>
                     <a href='#crisis'> 3. Crisis Committees </a>
                 </div>
-
-                <h3 className='committee_type' id='general-assembly' style={{ marginTop: '50px' }}>
-                    General Assemblies:
+                <p className='about-body-text' style={{ marginTop: '15px' }}>
+                    The committees for HUMUN IV are listed below. These seven committees are the
+                    heart and soul of HUMUN, contributing in the formation of the core themes. These
+                    committees were created with the intention of sparking discussions that are not
+                    only thought-provoking but also push people out of their comfort zones.
+                </p>
+                <h3 className='committee_type' id='general-assembly' style={{ marginTop: '30px' }}>
+                    General Assemblies
                 </h3>
                 {committeesData.slice(0, 2).map((c) => (
                     <CommitteeInfo
@@ -41,7 +40,7 @@ const Committees = ({ setActive }) => {
                 ))}
 
                 <h3 className='committee_type' id='specialized' style={{ marginTop: '100px' }}>
-                    Specialized Agencies:
+                    Specialized Agencies
                 </h3>
                 {committeesData.slice(2, 5).map((c) => (
                     <CommitteeInfo
@@ -57,7 +56,7 @@ const Committees = ({ setActive }) => {
                 ))}
 
                 <h3 className='committee_type' id='crisis' style={{ marginTop: '100px' }}>
-                    Crisis Committees:
+                    Crisis Committees
                 </h3>
                 {committeesData.slice(5).map((c) => (
                     <CommitteeInfo

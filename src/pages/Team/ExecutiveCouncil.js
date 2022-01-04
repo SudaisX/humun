@@ -1,4 +1,4 @@
-import { React, useEffect } from 'react';
+import { React, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import TeamCard from '../../components/TeamCard';
@@ -8,6 +8,36 @@ const ExecutiveCouncil = ({ setActive }) => {
         document.title = 'Executive Council | HUMUN';
         setActive([false, false, true, false, false, false]);
     }, [setActive]);
+
+    const [readMore, setReadMore] = useState(false);
+    const extraContent = (
+        <>
+            <p>
+                Lastly, what makes this year's conference stand out from the previous iterations is
+                the continuation of the legacy. The past three iterations of HUMUN have hosted
+                numerous delegates, one of them also happened to me. HUMUN 2018 was one of my
+                initial MUNS and it was nothing short of an honour to have experienced the enriching
+                quality of debate that HUMUN pledges to provide its delegates with, every year. It
+                was through having a 2/3rd majority of the executive council who had experienced
+                HUMUN as a delegate in the years before, which helped us undertake the task of
+                helping HUMUN improve, and to see it grow and reach new heights. HUMUN IV is not
+                just any other conference, it is our hour to better the quality of the discourse
+                that we got to engage in as delegates, to extend the knowledge we received, and to
+                pass it on to the future generation of passionate debaters, who would only make this
+                event better than it has ever been.
+            </p>
+            <Row>
+                <p>
+                    With all the being said, we are proud to introduce you to the theme for HUMUN
+                    IV; Opportunity. Equity. Legacy.{' '}
+                </p>
+            </Row>
+            <Row>
+                <p>We look forward to seeing you at HUMUN from 4th-6th February.</p>
+            </Row>
+        </>
+    );
+
     return (
         <Container className='content-container'>
             <h2 className='page-title'>
@@ -24,15 +54,17 @@ const ExecutiveCouncil = ({ setActive }) => {
             <h3 className='committee_type'>President</h3>
             <Row className='president mt-4 row-cols-1 row-cols-md-2'>
                 <Col className='president-image-container' lg={4}>
-                    <img
-                        className='president-image'
-                        src='/images/executive/mariam.png'
-                        alt='marium jamal - president'></img>
-                </Col>
-                <Col className='president-content' lg={8}>
-                    <Row className='president-name mt-4'>
+                    <Row>
+                        <img
+                            className='president-image'
+                            src='/images/executive/mariam.png'
+                            alt='marium jamal - president'></img>
+                    </Row>
+                    <Row className='president-name mt-4' style={{ textAlign: 'center' }}>
                         <h3>Marium Jamal</h3>
                     </Row>
+                </Col>
+                <Col className='president-content' lg={8}>
                     <Row className='president-letter'>
                         <Row>
                             <p>Greetings Delegates,</p>
@@ -61,32 +93,21 @@ const ExecutiveCouncil = ({ setActive }) => {
                                 promote equity, and to provide opportunities. To ensure the
                                 wellbeing of everyone who chooses to be a part of HUMUN from now
                                 onwards, and to create a safe space for the articulation of very
-                                diverse ideas. Lastly, what makes this year's conference stand out
-                                from the previous iterations is the continuation of the legacy. The
-                                past three iterations of HUMUN have hosted numerous delegates, one
-                                of them also happened to me. HUMUN 2018 was one of my initial MUNS
-                                and it was nothing short of an honour to have experienced the
-                                enriching quality of debate that HUMUN pledges to provide its
-                                delegates with, every year. It was through having a 2/3rd majority
-                                of the executive council who had experienced HUMUN as a delegate in
-                                the years before, which helped us undertake the task of helping
-                                HUMUN improve, and to see it grow and reach new heights. HUMUN IV is
-                                not just any other conference, it is our hour to better the quality
-                                of the discourse that we got to engage in as delegates, to extend
-                                the knowledge we received, and to pass it on to the future
-                                generation of passionate debaters, who would only make this event
-                                better than it has ever been.
+                                diverse ideas.{' '}
+                                {!readMore && (
+                                    <p
+                                        className='read-more-link email'
+                                        style={{ cursor: 'pointer' }}
+                                        onClick={() => {
+                                            setReadMore(!readMore);
+                                        }}>
+                                        read more..
+                                    </p>
+                                )}
                             </p>
                         </Row>
-                        <Row>
-                            <p>
-                                With all the being said, we are proud to introduce you to the theme
-                                for HUMUN IV; Opportunity. Equity. Legacy.{' '}
-                            </p>
-                        </Row>
-                        <Row>
-                            <p>We look forward to seeing you at HUMUN from 4th-6th February.</p>
-                        </Row>
+
+                        {readMore && extraContent}
                     </Row>
                 </Col>
             </Row>

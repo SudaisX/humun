@@ -11,7 +11,7 @@ const FeeStructure = ({ setActive }) => {
         <Container className='content-container'>
             <h2 className='page-title'>Fee Structure</h2>
 
-            <Row className='mt-4'>
+            <Row style={{ marginTop: '50px' }}>
                 <Row className='row-box'>
                     <Col md={3}></Col>
                     <Col md={3} className='fee-dates fee-box'>
@@ -36,7 +36,7 @@ const FeeStructure = ({ setActive }) => {
                     </Col>
                     <Col md={3} className='fee-box-content'>
                         <Row>Dec 10, 2021</Row>
-                        <Row style={{ color: '#6a163a' }}>-</Row>
+                        <Row style={{ color: '#6a163a' }}>to</Row>
                         <Row>Dec 27, 2021</Row>
                     </Col>
                     <Col md={3} className='fee-box-content'>
@@ -53,7 +53,7 @@ const FeeStructure = ({ setActive }) => {
                     </Col>
                     <Col md={3} className='fee-box-content'>
                         <Row>Dec 25, 2021</Row>
-                        <Row style={{ color: '#6a163a' }}>-</Row>
+                        <Row style={{ color: '#6a163a' }}>to</Row>
                         <Row>Jan 01, 2022</Row>
                     </Col>
                     <Col md={3} className='fee-box-content'>
@@ -64,21 +64,6 @@ const FeeStructure = ({ setActive }) => {
                     </Col>
                 </Row>
             </Row>
-
-            <div className='instructions'>
-                <h1 className='committee_type'>Instructions:</h1>
-                <ol className='contact-body-text'>
-                    <li>
-                        Before you start the registration process, please double check the details
-                        mentioned in the table above.
-                    </li>
-                    <li>
-                        Make sure you are vaccinated and have filled the vaccination form. If you
-                        have not filled the form, click here.
-                    </li>
-                    <li>Please provide correct information in the registration form.</li>
-                </ol>
-            </div>
 
             <div className='register-btn-container'>
                 <Link className='register-btn' to='/register'>

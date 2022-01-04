@@ -13,7 +13,7 @@ const About = ({ setActive }) => {
                 <a href='#hdu'> 1. HDU </a>
                 <a href='#history'> 2. History </a>
             </div> */}
-            <div className='about-container'>
+            <div className='about-container sans-font'>
                 <h3 className='committee_type' id='hdu'>
                     Habib Debate Union
                 </h3>
@@ -64,18 +64,20 @@ const About = ({ setActive }) => {
                     iterations of the MUN, HUMUN only grew to become one of Pakistan’s leading MUN
                     conferences due to its statement of inclusivity, and its centric approach
                     towards the betterment of academic transcendence. HUMUN lll was successful in
-                    hosting an approximate of 500 delegates, adhering towards its approach of
-                    prioritising the quality of debate that the delegates bring to the table, over
+                    hosting approximately 500 delegates, adhering towards its approach of
+                    prioritizing the quality of debate that the delegates bring to the table, over
                     the number of delegates it yields in every iteration. Moreover, the previous
                     iteration of HUMUN was also successful in establishing the social responsibility
                     program of HUMUN, where they collaborated with The Citizens Foundation and
                     managed to bring in two delegations from TCF, after providing them with
-                    extensive MUN training. The conference, despite being relatively new in the
-                    local, and international MUN circuits, has not only provided the external
-                    delegates, and students with a platform where they can freely articulate their
-                    ideas, and get support whilst doing so, but also empowered the students of Habib
-                    University to go beyond the box by exploring their capabilities, polishing their
-                    existing skills.
+                    extensive MUN training.
+                </p>
+                <p className='about-body-text'>
+                    The conference, despite being relatively new in the local, and international MUN
+                    circuits, has not only provided the external delegates, and students with a
+                    platform where they can freely articulate their ideas, and get support whilst
+                    doing so, but also empowered the students of Habib University to go beyond the
+                    box by exploring their capabilities, polishing their existing skills.
                 </p>
             </div>
         </Container>

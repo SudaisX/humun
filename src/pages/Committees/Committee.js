@@ -5,7 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 
 const Committee = ({ setActive }) => {
     const { id } = useParams();
-    const { shortTitle, title, info, chair, acd, guide, img } = committeesData.filter(
+    const { shortTitle, title, info, chair, acd, guide, img, topics } = committeesData.filter(
         (c) => c.link === id
     )[0];
     useEffect(() => {
@@ -36,6 +36,15 @@ const Committee = ({ setActive }) => {
                 </div>
 
                 <p className='committee-body'>{info}</p>
+
+                <p className='chair-name' style={{ textAlign: 'none' }}>
+                    <span className='chair-title'>Topics:</span>
+                    <ol>
+                        {topics.map((topic) => (
+                            <li>{topic}</li>
+                        ))}
+                    </ol>
+                </p>
 
                 <div
                     className='committee-page-btns'

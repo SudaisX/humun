@@ -7,7 +7,7 @@ const EquityPolicy = ({ setActive }) => {
         setActive([false, false, false, false, true, false, false]);
     }, [setActive]);
     return (
-        <Container className='content-container'>
+        <Container className='content-container sans-font'>
             <h2 className='page-title'>
                 <span>Equity Policy</span>
             </h2>
@@ -36,88 +36,98 @@ const EquityPolicy = ({ setActive }) => {
             <ul>
                 <li>
                     <p>
-                        HUMUN Participants: This term is inclusive of all the individuals involved
-                        in the conference, including but not limited to the delegates, committee
-                        staff, directorate, Habib University staff, external guests and vendors,
-                        institutional representatives (including coaches), equity officers,
-                        volunteers, and members of the HUMUN executive council.
+                        <span className='lemon-font'>HUMUN Participants:</span> This term is
+                        inclusive of all the individuals involved in the conference, including but
+                        not limited to the delegates, committee staff, directorate, Habib University
+                        staff, external guests and vendors, institutional representatives (including
+                        coaches), equity officers, volunteers, and members of the HUMUN executive
+                        council.
                     </p>
                 </li>
                 <li>
                     <p>
-                        Equity Policy: A conclusive and holistic framework adopted by HUMUN to
-                        ensure the equal, fair, just, and safe contribution of all the HUMUN
-                        participants regardless of their race, class, gender identity, gender, sex,
-                        sexual orientation, religion, ethnicity, etc.
+                        <span className='lemon-font'>Equity Policy:</span> A conclusive and holistic
+                        framework adopted by HUMUN to ensure the equal, fair, just, and safe
+                        contribution of all the HUMUN participants regardless of their race, class,
+                        gender identity, gender, sex, sexual orientation, religion, ethnicity, etc.
                     </p>
                 </li>
                 <li>
                     <p>
-                        Direct sexual harassment: A type of behaviour that is characterised by
-                        unwanted or non-consensual sexual advances, physical contact, and any
-                        unwelcome sexual physical or verbal conduct.
+                        <span className='lemon-font'>Direct sexual harassment:</span> A type of
+                        behaviour that is characterised by unwanted or non-consensual sexual
+                        advances, physical contact, and any unwelcome sexual physical or verbal
+                        conduct.
                     </p>
                 </li>
                 <li>
                     <p>
-                        Quid Pro Quo Sexual Harassment: A type of unwanted sexual contact when a
-                        person of authority coerces their (junior) peers for (non-consensual) sexual
-                        favours in exchange for a particular benefit like committee award,
-                        unwarranted guidance, and any leverage. Such behaviour is also characterised
-                        by the decisions that person(s) of authority make based on accepting or
-                        rejecting the demands for (non-consensual) sexual favours. For example:
-                        revoking the award eligibility of person X based on the rejection of sexual
-                        favour Y by the person(s) of authority Z.{' '}
+                        <span className='lemon-font'>Quid Pro Quo Sexual Harassment:</span> A type
+                        of unwanted sexual contact when a person of authority coerces their (junior)
+                        peers for (non-consensual) sexual favours in exchange for a particular
+                        benefit like committee award, unwarranted guidance, and any leverage. Such
+                        behaviour is also characterised by the decisions that person(s) of authority
+                        make based on accepting or rejecting the demands for (non-consensual) sexual
+                        favours. For example: revoking the award eligibility of person X based on
+                        the rejection of sexual favour Y by the person(s) of authority Z.{' '}
                     </p>
                 </li>
                 <li>
                     <p>
-                        Hostile Work Environment: An environment characterised by fear and
-                        intimidation subjected to a HUMUN participant X by the person(s) of
-                        authority or peers based on X's sex, gender, gender identity or expression,
-                        sexual orientation, and other protected attributes. Such an environment
-                        directly and adversely affects X's ability to do their work. A hostile work
-                        environment also arises when individuals refuse to submit to unwelcome
-                        sexual advances and are subjected to threats, unfair treatment, and other
-                        sources of intimidation.
+                        <span className='lemon-font'>Hostile Work Environment:</span> An environment
+                        characterised by fear and intimidation subjected to a HUMUN participant X by
+                        the person(s) of authority or peers based on X's sex, gender, gender
+                        identity or expression, sexual orientation, and other protected attributes.
+                        Such an environment directly and adversely affects X's ability to do their
+                        work. A hostile work environment also arises when individuals refuse to
+                        submit to unwelcome sexual advances and are subjected to threats, unfair
+                        treatment, and other sources of intimidation.
                     </p>
                 </li>
                 <li>
                     <p>
-                        Courtesy: A behaviour characterised by respect for every HUMUN participant
-                        and their protected attributes (see below) regardless of your personal
-                        beliefs, opinions, and affiliations.{' '}
+                        <span className='lemon-font'>Courtesy:</span> A behaviour characterised by
+                        respect for every HUMUN participant and their protected attributes (see
+                        below) regardless of your personal beliefs, opinions, and affiliations.{' '}
                     </p>
                 </li>
                 <li>
                     <p>
-                        Protected Attributes: Refers to the features of individuals that arise from
-                        their identity that is 'personal' to them and does not warrant any
-                        involvement of the others. Such features should not be the basis of any
-                        decision-making done in HUMUN. Protected attributes include but are not
-                        limited to: age, gender, gender identity and expression, sex, sex
-                        reassignment, sexual orientation, marital status, race, ethnicity, religion,
-                        disability, etc.{' '}
+                        <span className='lemon-font'>Protected Attributes:</span> Refers to the
+                        features of individuals that arise from their identity that is 'personal' to
+                        them and does not warrant any involvement of the others. Such features
+                        should not be the basis of any decision-making done in HUMUN. Protected
+                        attributes include but are not limited to: age, gender, gender identity and
+                        expression, sex, sex reassignment, sexual orientation, marital status, race,
+                        ethnicity, religion, disability, etc.{' '}
                     </p>
                 </li>
                 <li>
                     <p>
-                        Preferred Gender Pronouns: A set of personal pronouns (he, she, they, it,
-                        etc.) that an individual wants others to subscribe to adhere to the
-                        individual's gender identity- both binary (male or female) and non-binary
-                        (non-male, non-female, both, none, and others).{' '}
+                        <span className='lemon-font'>Preferred Gender Pronouns:</span> A set of
+                        personal pronouns (he, she, they, it, etc.) that an individual wants others
+                        to subscribe to adhere to the individual's gender identity- both binary
+                        (male or female) and non-binary (non-male, non-female, both, none, and
+                        others).{' '}
                     </p>
                 </li>
                 <li>
                     <p>
-                        Equity Officers: Refers to the individuals in charge of processing,
-                        investigating and giving final verdicts on any filed equity violation.{' '}
+                        <span className='lemon-font'>Equity Officers:</span> Refers to the
+                        individuals in charge of processing, investigating and giving final verdicts
+                        on any filed equity violation.{' '}
                     </p>
                 </li>
             </ul>
-            <ol type='1'>
+            <ol type='1' className='lemon-font'>
                 <li>
-                    <p>All individuals are expected to:</p>
+                    <p>
+                        <i>
+                            <span className='lemon-font' style={{ marginBottom: '15px' }}>
+                                All individuals are expected to:
+                            </span>
+                        </i>
+                    </p>
                     <ol type='a'>
                         <li>
                             <p>
@@ -316,10 +326,17 @@ const EquityPolicy = ({ setActive }) => {
                     </ol>
                 </li>
                 <li>
-                    Derogation from any of the following rules may result in disciplinary action as
-                    deemed appropriate by HUMUN Executive, Equity policy, and Senior HDU member
-                    (Ifrah Faheem) including but not limited to:
-                    <ol type='a'>
+                    <p>
+                        <i>
+                            <span className='lemon-font' style={{ marginBottom: '15px' }}>
+                                Derogation from any of the following rules may result in
+                                disciplinary action as deemed appropriate by HUMUN Executive, Equity
+                                policy, and Senior HDU member (Ifrah Faheem) including but not
+                                limited to:
+                            </span>
+                        </i>
+                    </p>
+                    <ol type='a' className='lemon-font'>
                         <li>
                             <p>
                                 Suspension and expulsion from the club or any club-related

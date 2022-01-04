@@ -89,8 +89,8 @@ img {
 .content-container {
     max-width: 1000px;
     margin: 0 auto;
-    font-family: 'Karla', sans-serif;
-    background-color: rgba(0, 0, 0, 0.4);
+    font-family: 'Source-Serif-Pro', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 40px;
     border-radius: 8px;
     margin-top: 50px;
@@ -98,22 +98,22 @@ img {
 
 /* General Effects
  ----------------------------------------------- */
-.wavy {
+/* .wavy {
     background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
     background-position: 0 100%;
     background-repeat: repeat-x;
     background-size: 3px 3px;
-    /* color: #000; */
+    color: #000;
     text-decoration: none;
-}
+} */
 
-.wavy:hover {
+/* .wavy:hover {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23FDCA40' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
     background-position: 0 100%;
     background-size: auto 6px;
     background-repeat: repeat-x;
     text-decoration: none;
-}
+} */
 
 .fancy-btn-sm {
     border-radius: 29px;
@@ -267,7 +267,7 @@ img {
 }
 
 .dropdown-item:hover {
-    background-color: var(--color2);
+    background-color: var(--color3);
 }
 
 .dropdown-item:active {
@@ -542,7 +542,7 @@ img {
 
 .about-body-text {
     text-align: justify;
-    color: var(--color6);
+    /* color: var(--color6); */
 }
 
 .aboutme {
@@ -617,11 +617,11 @@ img {
 
 /* TEAM
 ----------------------------------------------- */
-.president-image-container {
+/* .president-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .president-image {
     max-height: 400px;
@@ -649,6 +649,13 @@ img {
     border-color: var(--color2);
 }
 
+.read-more-link {
+    display: inline;
+    border: none;
+    padding: none;
+    margin: none;
+}
+
 /* COMMITTEE
 ----------------------------------------------- */
 
@@ -667,6 +674,7 @@ img {
 
 .committee_types {
     text-align: center;
+    font-family: 'Source-Serif-Pro';
 }
 
 .committee {
@@ -695,14 +703,15 @@ img {
 
 .committee_name {
     /* margin-left: 40px; */
-    margin-top: 20px;
+    margin: 30px 0;
     font-size: 25px;
-    font-family: 'Lemon-Milk', serif;
+    font-family: 'Source-Serif-Pro', serif;
     font-weight: bold;
+    text-align: center;
 }
 
 .committee_name:hover {
-    color: var(--color2);
+    /* color: var(--color2); */
 }
 
 .committee_type {
@@ -712,11 +721,12 @@ img {
     font-family: 'Lemon-Milk', serif;
     font-weight: bold;
     color: var(--color6);
+    text-align: center;
 }
 
-.committee_type:hover {
+/* .committee_type:hover {
     color: var(--color2);
-}
+} */
 
 .committee_title {
     font-family: 'Source-Serif-Pro', serif;
@@ -1005,6 +1015,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -1034,5 +1045,25 @@ img {
 .accordion-body {
     background-color: var(--color3);
     color: var(--color6);
+    font-family: 'Source-Serif-Pro';
+}
+
+.instructions {
+    /* color: var(--color6);
+    font-size: 20px; */
+    margin-bottom: 20px;
+}
+
+.lemon-font {
+    font-family: 'Lemon-Milk';
+    color: var(--color6);
+}
+
+.lemon-font li p {
+    font-family: 'Source-Serif-Pro';
+    color: white;
+}
+
+.sans-font {
     font-family: 'Source-Serif-Pro';
 }

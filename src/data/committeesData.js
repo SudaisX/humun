@@ -10,17 +10,25 @@ const committees = [
 
         guide: '/guides/disec.pdf',
         link: 'disec',
+        topics: [
+            'Asymmetric Warfare in the 21st Century',
+            'Disarmament and Denuclearization aspirations of the Korean Peace Process ',
+        ],
     },
     {
         id: 2,
         shortTitle: 'SOCHUM',
-        title: 'Social, Cultural, and Humanitarian Committee (SOCHUM)',
+        title: 'Social, Cultural, and Humanitarian Committee',
         chair: ['Qazi Muhammad Talha', 'Hafsa Khurram', 'Ilma Eva'],
         acd: ['Ali Arif', 'Uzair Rafiq'],
         info: 'The Social, Cultural, and Humanitarian Committee (SOCHUM or C3) of the United Nations General Assembly is a luminary course of action to maintain and protect human rights on international and regional avenues. The foundations of this committee are firmly built on the United Nations Declaration on Human Rights. Hence, it is viable in addressing the pressing questions on the matter of human rights violation, humanitarian intervention, affairs, and policies and maintenance of cultural sovereignty. Under the mandate of SOCHUM fall various agendas inclusive of but not limited to: the welfare of refugees, protection of children, rights of gender and sexual minorities, the treatment of displaced persons, elimination of racial discrimination, questions on self-determination, provisions on the criminal justice system, etc. Since SOCHUM focuses on untangling the complexities regarding humanitarian affairs and refugee crises, the third committee works closely with agencies like United Nations Human Rights Office and United Nations High Commissioner for Refugees.',
         img: '/images/committees/sochum.png',
         guide: '/guides/sochum.pdf',
         link: 'sochum',
+        topics: [
+            'Vaccination equity and rights in third world countries',
+            'SDG 16 and Target 16.10: Right to press freedom and information',
+        ],
     },
     {
         id: 3,
@@ -32,17 +40,24 @@ const committees = [
         img: '/images/committees/uncsw.png',
         guide: '/guides/uncsw.pdf',
         link: 'uncsw',
+        topics: [
+            'Ensuring gender sensitization, facilitating gendered peacekeeping and mitigating gendered threats in the context of humanitarian and refugee crises',
+        ],
     },
     {
         id: 4,
         shortTitle: 'PNA',
-        title: 'Pakistan National Assembly (PNA)',
+        title: 'Pakistan National Assembly',
         chair: ['Anzal Abbas Jaffari', 'Yelmaz Mujtaba', 'Fahmida Mirza'],
         acd: ['Markhan Mushtaque'],
         info: "Pakistan National Assembly (PNA), a legislative body that represents the citizens of Pakistan at the national level, is deployed per rules and regulations of the original National Assembly of Pakistan. With a total of 336 members, the representatives are democratically elected and meet to discuss the country's issues. Like its original institution, the committee will comprise the lower house of parliament. The committee grants equal representation to all individuals and encourages every member to legislate and formulate policies addressing the most oppressing issues of Pakistan.",
         img: '/images/committees/pna.png',
         guide: '/guides/pna.pdf',
         link: 'pna',
+        topics: [
+            'The viable implementation of Single National Curriculum',
+            'National Economic Framework: current status of natural resources and economic future',
+        ],
     },
     {
         id: 5,
@@ -54,6 +69,7 @@ const committees = [
         img: '/images/committees/hunsc.png',
         guide: '/guides/hunsc.pdf',
         link: 'hunsc',
+        topics: ['The disintegration of the USSR and the formation of Euro-Asian states'],
     },
     {
         id: 6,
@@ -65,6 +81,7 @@ const committees = [
         img: '/images/committees/ira.png',
         guide: '/guides/ira.pdf',
         link: 'ira',
+        topics: ['The Troubles and the aftermath of Bloody Sunday (1972)'],
     },
     {
         id: 7,
@@ -76,6 +93,7 @@ const committees = [
         img: '/images/committees/tlop.png',
         guide: '/guides/tlop.pdf',
         link: 'tlop',
+        topics: ['Crisis On Earth'],
     },
 ];
 

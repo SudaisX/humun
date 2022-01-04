@@ -8,7 +8,7 @@ const Contact = ({ setActive }) => {
     }, [setActive]);
     return (
         <Container className='content-container '>
-            <h2 className='page-title'>
+            <h2 className='page-title' style={{ margin: '30px 0' }}>
                 <span>Contact Us</span>
             </h2>
             <Row className='contact-container mt-4'>
@@ -22,8 +22,8 @@ const Contact = ({ setActive }) => {
                         allowfullscreen=''
                         loading='lazy'></iframe>
                 </Col>
-                <Col md={1}></Col>
-                <Col>
+                {/* <Col md={1}></Col> */}
+                <Col style={{ marginLeft: '30px' }}>
                     <Row className='committee_type'>Address:</Row>
                     <Row className='contact-body-text'>
                         Block 18, Gulistan-e-Jauhar, University Avenue, Off Shahrah-e-Faisal Rd,
