@@ -8,7 +8,7 @@ const Contact = ({ setActive }) => {
     }, [setActive]);
     return (
         <Container className='content-container '>
-            <h2 className='page-title' style={{ margin: '30px 0' }}>
+            <h2 className='page-title'>
                 <span>Contact Us</span>
             </h2>
             <Row className='contact-container mt-4'>
