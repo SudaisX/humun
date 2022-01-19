@@ -131,7 +131,7 @@ const Header = ({ active }) => {
                                         <Link
                                             to='/directorate'
                                             className='navlink-dropdown dropdown-item'>
-                                            Directoroate
+                                            Directorate
                                         </Link>
                                     </li>
                                 </ul>

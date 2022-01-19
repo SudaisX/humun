@@ -1,13 +1,28 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import JotformEmbed from 'react-jotform-embed';
 
 const Register = ({ setActive }) => {
+    const [currLink, setCurrLink] = useState(0);
+
     useEffect(() => {
         document.title = 'Register | HUMUN';
         setActive([false, false, false, false, true]);
-    }, [setActive]);
+    }, [setActive, currLink]);
+
+    const regLinks = [
+        'https://www.jotform.com/form/213422949107455',
+        'https://form.jotform.com/213624426696462',
+    ];
+
+    const onRegDelegation = () => {
+        setCurrLink(0);
+    };
+
+    const onRegDelegate = () => {
+        setCurrLink(1);
+    };
 
     return (
         <Container className='content-container'>
@@ -40,8 +55,22 @@ const Register = ({ setActive }) => {
                         <p>Please provide correct information in the registration form.</p>
                     </li>
                 </ol>
+                <div className='committee_types'>
+                    <a
+                        href='#delegation'
+                        className={currLink === 0 ? 'active' : ''}
+                        onClick={onRegDelegation}>
+                        Register Delegation
+                    </a>
+                    <a
+                        href='#delegate'
+                        className={currLink === 1 ? 'active' : ''}
+                        onClick={onRegDelegate}>
+                        Register Delegate
+                    </a>
+                </div>
             </div>
-            <JotformEmbed src='https://www.jotform.com/form/213422949107455' />
+            <JotformEmbed src={regLinks[currLink]} />
         </Container>
     );
 };
