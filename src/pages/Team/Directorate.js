@@ -47,11 +47,11 @@ const Directorate = ({ setActive }) => {
                     title='Director Equity'
                     img='/images/directorate/sidra.png'
                 />
-                <TeamCard
+                {/* <TeamCard
                     name='Filzah Fawad'
                     title='Director Equity'
                     img='/images/directorate/filza.png'
-                />
+                /> */}
             </div>
 
             <h3 className='committee_type'>Content/Publishing Cell</h3>
