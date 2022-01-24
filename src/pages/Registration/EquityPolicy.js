@@ -11,6 +11,7 @@ const EquityPolicy = ({ setActive }) => {
             <h2 className='page-title'>
                 <span>Equity Policy</span>
             </h2>
+            <h1 className='committee_type'>Code of Conduct</h1>
             <p>
                 The Habib University Model United Nations (hereinafter referred to as HUMUN) was
                 founded on the principle of respect for diversity and the necessity of preparing our
