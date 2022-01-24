@@ -20,11 +20,11 @@ const Footer = () => {
                     </a>
                 </li>
 
-                <li className='social-list_item'>
+                {/* <li className='social-list_item'>
                     <a href='https://www.twitter.com/' className=' social-list_link'>
                         <i className='fab fa-twitter social-list-icon'></i>
                     </a>
-                </li>
+                </li> */}
             </ul>
             <small className='footer-text'>&copy; HUMUN 2021</small>
         </footer>

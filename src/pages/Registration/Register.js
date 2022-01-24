@@ -41,7 +41,7 @@ const Register = ({ setActive }) => {
                             .
                         </p>
                     </li>
-                    <li>
+                    {/* <li>
                         <p>
                             In case of not being vaccinated against the COVID-19 virus, please{' '}
                             <Link to='/healthconcern' className='email'>
@@ -50,7 +50,7 @@ const Register = ({ setActive }) => {
                             to fill the health concern form. (Registerations of non vaccinated
                             people, who fail to fill in this form will not be accepted)
                         </p>
-                    </li>
+                    </li> */}
                     <li>
                         <p>Please provide correct information in the registration form.</p>
                     </li>
