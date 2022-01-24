@@ -192,15 +192,16 @@ const Secretariat = ({ setActive }) => {
                     title='Committee Director, TLOP'
                     img='/images/secretariat/directors/hamza.png'
                 />
-                <TeamCard
-                    name='Fawwaz Ahmed'
-                    title='Committee Director, TLOP'
-                    img='/images/secretariat/acds/fawwaz.png'
-                />
+
                 <TeamCard
                     name='Rida Khan'
                     title='Committee Director, TLOP'
                     img='/images/secretariat/acds/rida.png'
+                />
+                <TeamCard
+                    name='Fawwaz Ahmed'
+                    title='Assistant Committee Director, TLOP'
+                    img='/images/secretariat/acds/fawwaz.png'
                 />
             </div>
         </Container>
