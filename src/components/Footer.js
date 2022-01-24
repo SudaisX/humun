@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className='footer'>
-            <a href='mailto:sudaisyasin@gmail.com' className='email'>
+            <a href='mailto:humun@habib.edu.pk' className='email'>
                 <i className='far fa-envelope'></i> humun@habib.edu.pk
             </a>
             <ul className='social-list'>
