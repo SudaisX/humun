@@ -55,10 +55,12 @@ const ExecutiveCouncil = ({ setActive }) => {
             <Row className='president mt-4 row-cols-1 row-cols-md-2'>
                 <Col className='president-image-container' lg={4}>
                     <Row>
-                        <img
-                            className='president-image'
-                            src='/images/executive/mariam.png'
-                            alt='marium jamal - president'></img>
+                        <div>
+                            <img
+                                className='president-image'
+                                src='/images/executive/mariam.png'
+                                alt='marium jamal - president'></img>
+                        </div>
                     </Row>
                     <Row className='president-name mt-4' style={{ textAlign: 'center' }}>
                         <h3>Marium Jamal</h3>
