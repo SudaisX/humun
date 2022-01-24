@@ -59,7 +59,7 @@ const Directorate = ({ setActive }) => {
                 <TeamCard
                     name='Areeba Mohsin'
                     title='Director Publishing'
-                    img='/images/directorate/areeba.png'
+                    img='/images/directorate/areeba.jpeg'
                 />
                 <TeamCard
                     name='Anum Imtiaz'
@@ -88,7 +88,7 @@ const Directorate = ({ setActive }) => {
                 <TeamCard
                     name='Muhammad Azeem Haider'
                     title='Deputy Director Registration'
-                    img='/images/directorate/azeem.png'
+                    img='/images/directorate/azeem.jpeg'
                 />
             </div>
 
