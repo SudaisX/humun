@@ -60,6 +60,7 @@ function App() {
                 <Route path='/contact' element={<Contact setActive={setActive} />} />
 
                 <Route path='/' element={<Home setActive={setActive} />} />
+                <Route path='*' element={<Home setActive={setActive} />} />
             </Routes>
 
             {active[0] ? '' : <Footer />}
