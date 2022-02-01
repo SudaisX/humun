@@ -49,7 +49,7 @@ const Committee = ({ setActive }) => {
                 <div
                     className='committee-page-btns'
                     style={{ marginTop: '20px', marginBottom: '20px' }}>
-                    <a className='fancy-btn' href={'/guides/' + guide}>
+                    <a className='fancy-btn' href={guide} download>
                         <span></span>Download Guide
                     </a>
                 </div>

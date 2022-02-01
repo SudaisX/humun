@@ -238,7 +238,7 @@ img {
 }
 
 #basic-nav-dropdown:hover {
-    border-bottom: 3px solid var(--color2);
+    /* border-bottom: 3px solid var(--color2); */
 }
 
 .navlink {

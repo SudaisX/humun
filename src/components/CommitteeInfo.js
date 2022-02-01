@@ -20,9 +20,9 @@ const CommitteeInfo = ({ shortTitle, title, chair, info, img, link, guide }) => 
                     to={'/committees/' + link}>
                     <span></span>Learn More
                 </Link>
-                <Link className='fancy-btn' style={{ fontSize: '14px' }} to={'/guides/' + guide}>
+                <a className='fancy-btn' style={{ fontSize: '14px' }} href={guide} download>
                     <span></span>Download Guide
-                </Link>
+                </a>
             </p>
             <img className='committee_img' src={img} alt={title}></img>
         </div>

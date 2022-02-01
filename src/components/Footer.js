@@ -10,12 +10,18 @@ const Footer = () => {
                 <li className='social-list_item'>
                     <a
                         href='https://www.facebook.com/HabibUniversityMUN'
-                        className=' social-list_link'>
+                        className=' social-list_link'
+                        target='_blank'
+                        rel='noopener noreferrer'>
                         <i className='fab fa-facebook social-list-icon'></i>
                     </a>
                 </li>
                 <li className='social-list_item'>
-                    <a href='https://www.instagram.com/habib_mun/' className='social-list_link'>
+                    <a
+                        href='https://www.instagram.com/habib_mun/'
+                        className='social-list_link'
+                        target='_blank'
+                        rel='noopener noreferrer'>
                         <i className='fab fa-instagram social-list-icon'></i>
                     </a>
                 </li>
@@ -26,7 +32,7 @@ const Footer = () => {
                     </a>
                 </li> */}
             </ul>
-            <small className='footer-text'>&copy; HUMUN 2021</small>
+            <small className='footer-text'>&copy; HUMUN 2022</small>
         </footer>
     );
 };

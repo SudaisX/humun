@@ -26,17 +26,17 @@ const Directorate = ({ setActive }) => {
                 <TeamCard
                     name='Tasmiyah Malik'
                     title='Director Design'
-                    img='/images/directorate/tasmiyah.png'
+                    img='/images/directorate/tasmiyah.JPG'
                 />
                 <TeamCard
                     name='Lamya Mithaiwala'
                     title='Director Design'
-                    img='/images/directorate/lamya.png'
+                    img='/images/directorate/lamya.JPG'
                 />
                 <TeamCard
                     name='Khadija Sohail Shafi'
                     title='Deputy Director Design'
-                    img='/images/directorate/khadija.png'
+                    img='/images/directorate/khadija.JPG'
                 />
             </div>
 
@@ -45,12 +45,12 @@ const Directorate = ({ setActive }) => {
                 <TeamCard
                     name='Sidra Channa'
                     title='Director Equity'
-                    img='/images/directorate/sidra.png'
+                    img='/images/directorate/sidra.JPG'
                 />
                 {/* <TeamCard
                     name='Filzah Fawad'
                     title='Director Equity'
-                    img='/images/directorate/filza.png'
+                    img='/images/directorate/filza.JPG'
                 /> */}
             </div>
 
@@ -59,12 +59,12 @@ const Directorate = ({ setActive }) => {
                 <TeamCard
                     name='Areeba Mohsin'
                     title='Director Publishing'
-                    img='/images/directorate/areeba.jpeg'
+                    img='/images/directorate/areeba.JPG'
                 />
                 <TeamCard
                     name='Anum Imtiaz'
                     title='Director Content'
-                    img='/images/directorate/anum.png'
+                    img='/images/directorate/anum.JPG'
                 />
             </div>
 
@@ -73,22 +73,22 @@ const Directorate = ({ setActive }) => {
                 <TeamCard
                     name='Daniyal Lightwala'
                     title='Director Registration'
-                    img='/images/directorate/daniyal.png'
+                    img='/images/directorate/daniyal.JPG'
                 />
                 <TeamCard
                     name='Inara Shahid Ali'
                     title='Director Registration'
-                    img='/images/directorate/inara.png'
+                    img='/images/directorate/inara.JPG'
                 />
                 <TeamCard
                     name='Faryal Khan'
                     title='Deputy Director Registration'
-                    img='/images/directorate/faryal.png'
+                    img='/images/directorate/faryal.JPG'
                 />
                 <TeamCard
                     name='Muhammad Azeem Haider'
                     title='Deputy Director Registration'
-                    img='/images/directorate/azeem.jpeg'
+                    img='/images/directorate/azeem.JPG'
                 />
             </div>
 
@@ -97,17 +97,17 @@ const Directorate = ({ setActive }) => {
                 <TeamCard
                     name='Sudais Yasin'
                     title='Director Technology'
-                    img='/images/directorate/sudais.png'
+                    img='/images/directorate/sudais.jpeg'
                 />
                 <TeamCard
                     name='Sumaira Khan'
                     title='Director Technology'
-                    img='/images/directorate/sumaira.png'
+                    img='/images/directorate/sumaira.JPG'
                 />
                 <TeamCard
                     name='Alisha Momin'
                     title='Deputy Director Technology'
-                    img='/images/directorate/alisha.png'
+                    img='/images/directorate/alisha.JPG'
                 />
             </div>
 
@@ -116,12 +116,12 @@ const Directorate = ({ setActive }) => {
                 <TeamCard
                     name='Laiba Farid'
                     title='Director Finance'
-                    img='/images/directorate/laiba.png'
+                    img='/images/directorate/laiba.JPG'
                 />
                 <TeamCard
                     name='Mustafa Sohail'
                     title='Deputy Director Finance'
-                    img='/images/directorate/mustafa.png'
+                    img='/images/directorate/mustafa.JPG'
                 />
             </div>
 
@@ -130,12 +130,12 @@ const Directorate = ({ setActive }) => {
                 <TeamCard
                     name='Samana Butul'
                     title='Director Marketing'
-                    img='/images/directorate/samana.png'
+                    img='/images/directorate/samana.JPG'
                 />
                 <TeamCard
                     name='Qausia Shah'
                     title='Deputy Director Marketing'
-                    img='/images/directorate/qausia.png'
+                    img='/images/directorate/qausia.JPG'
                 />
             </div>
 
@@ -144,17 +144,17 @@ const Directorate = ({ setActive }) => {
                 <TeamCard
                     name='Amal Humayun Sheikh'
                     title='Director Photography/Videography'
-                    img='/images/directorate/amal.png'
+                    img='/images/directorate/amal.JPG'
                 />
                 <TeamCard
                     name='Shama Mussa'
                     title='Deputy Director Photography/Videography'
-                    img='/images/directorate/shama.png'
+                    img='/images/directorate/shama.JPG'
                 />
                 <TeamCard
                     name='Faizan Jessani'
                     title='Director Photography/Videography'
-                    img='/images/directorate/faizan.png'
+                    img='/images/directorate/faizan.JPG'
                 />
             </div>
 
@@ -163,12 +163,12 @@ const Directorate = ({ setActive }) => {
                 <TeamCard
                     name='Fareezeh Sidhwa'
                     title='Director Liaison'
-                    img='/images/directorate/fareezah.png'
+                    img='/images/directorate/fareezah.JPG'
                 />
                 <TeamCard
                     name='Tooba Fatima'
                     title='Director Liaison'
-                    img='/images/directorate/tooba.png'
+                    img='/images/directorate/tooba.JPG'
                 />
                 <TeamCard
                     name='Aamna Jafrani'
@@ -182,17 +182,17 @@ const Directorate = ({ setActive }) => {
                 <TeamCard
                     name='Syed Muhammad Abdullah Arif'
                     title='Deputy Director Security'
-                    img='/images/directorate/abdullah.png'
+                    img='/images/directorate/abdullah.JPG'
                 />
                 <TeamCard
                     name='Insha Hashmani'
                     title='Director Security'
-                    img='/images/directorate/insha.png'
+                    img='/images/directorate/insha.JPG'
                 />
                 <TeamCard
                     name='Saniyah Salman'
                     title='Deputy Director Security'
-                    img='/images/directorate/saniyah.png'
+                    img='/images/directorate/saniyah.JPG'
                 />
             </div>
 
@@ -201,7 +201,7 @@ const Directorate = ({ setActive }) => {
                 <TeamCard
                     name='Ariba Owais'
                     title='Director Socials'
-                    img='/images/directorate/ariba.png'
+                    img='/images/directorate/ariba.JPG'
                 />
                 <TeamCard
                     name='Arham Ahmed'
@@ -215,12 +215,12 @@ const Directorate = ({ setActive }) => {
                 <TeamCard
                     name='Imra Rahim Hemani'
                     title='Director Public Relations'
-                    img='/images/directorate/imra.png'
+                    img='/images/directorate/imra.JPG'
                 />
                 <TeamCard
                     name='Imra Rahim Hemani'
                     title='Deputy Director Public Relations'
-                    img='/images/directorate/sakeena.png'
+                    img='/images/directorate/sakeena.JPG'
                 />
             </div>
         </Container>

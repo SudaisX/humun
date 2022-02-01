@@ -30,14 +30,18 @@ const Home = ({ setActive }) => {
                     <li className='social-list_item' style={{ margin: '0' }}>
                         <a
                             href='https://www.facebook.com/HabibUniversityMUN/'
-                            className=' social-list_link facebook'>
+                            className=' social-list_link facebook'
+                            target='_blank'
+                            rel='noopener noreferrer'>
                             <i className='fab fa-facebook' style={{ color: '#edd5b8' }}></i>
                         </a>
                     </li>
                     <li className='social-list_item' style={{ margin: '0' }}>
                         <a
                             href='https://www.instagram.com/habib_mun/'
-                            className='social-list_link instagram'>
+                            className='social-list_link instagram'
+                            target='_blank'
+                            rel='noopener noreferrer'>
                             <i className='fab fa-instagram' style={{ color: '#edd5b8' }}></i>
                         </a>
                     </li>
